@@ -59,7 +59,7 @@ nav {
     ul {
         display:flex;
         justify-content: space-around;
-        width: 99%;
+        width: 98%;
         background-color: #343a40;
         align-content: center;
         align-items: center;
@@ -68,12 +68,14 @@ nav {
 
         li {
             list-style: none;
-            transition: all 0.3s ease 0s;
+            transition: all 0.1s ease 0s;
             a {
                 text-decoration: none;
                 color: white;
                 font-family: primaryFont;
                 font-size: 20px;
+                transition: all 0.3s ease 0s;
+
             }
             a:hover {
                 color:grey;
@@ -87,6 +89,7 @@ nav {
     z-index: 100;
     display: flex;
     align-items: center;
+    height: 100vh;
 
     article {
         margin: auto;
@@ -94,7 +97,7 @@ nav {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        min-height: 80vh;
+        min-height: 70vh;
         width: 95vw;
     }
     h2 {
@@ -112,14 +115,14 @@ nav {
         font-size: 25px;
         padding: 0 20px;
         font-weight: lighter;
-        max-width: 600px;
+        max-width: 700px;
     }
     button {
         font-family: primaryFont;
         color: white;
         font-size: 20px;
         font-weight: bold;
-        background-color: #5c2966;
+        background-color: #7e3f8f;
         border-color: $accent1;
         border-radius: 40px;
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
@@ -133,7 +136,7 @@ nav {
     }
         button:hover {
             background-color: white;
-            color: #5c2966;
+            color: #7e3f8f;
             transform: translateY(-7px);
           }
     
@@ -149,7 +152,7 @@ $rot5: random(500);
 
 $line1: random(10)+10;
 $line2: random(10)+10;
-$line3: random(10)+10n;
+$line3: random(10)+10;
 
 $start1: random(500);
 $start2: random(500);
@@ -276,16 +279,17 @@ $duration5: random(200)+100;
 
 
 @keyframes line1 {
-    0%   {transform: translateX(25vw);}
-    100% {transform: translateX(-25vw);}
+    0%   {transform: translateX(22.5vw);}
+    100% {transform: translateX(-22.5vw);}
 }
 @keyframes line2 {
-    0%   {transform: translateX(25vw);}
-    100% {transform: translateX(-25vw);}
+    0%   {transform: translateX(22.5vw);}
+    100% {transform: translateX(-22.5vw);}
 }
+
 @keyframes line3 {
-    0%   {transform: translateX(25vw);}
-    100% {transform: translateX(-25vw);}
+    0%   {transform: translateX(22.5vw);}
+    100% {transform: translateX(-22.5vw);}
 }
 
 @keyframes ball1{
@@ -295,11 +299,11 @@ $duration5: random(200)+100;
 
 @keyframes ball2{
     0%   {transform: scale(1,1) }
-    100% {transform: scale(1.5,1.5);}
+    100% {transform: scale(1.8,1.8);}
 }
 
 .bigline {
-    width: 50vw;
+    width: 45vw;
     height: 5px;
     background-color: #8291911a;
 }
