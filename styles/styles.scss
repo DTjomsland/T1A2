@@ -59,10 +59,12 @@ nav {
     ul {
         display:flex;
         justify-content: space-around;
-        width: 100%;
+        width: 99%;
         background-color: #343a40;
         align-content: center;
         align-items: center;
+        margin-bottom: 10px;
+        border-radius: 20px;
 
         li {
             list-style: none;
@@ -145,9 +147,9 @@ $rot3: random(800);
 $rot4: random(600);
 $rot5: random(500);
 
-$line1: random(10)+5;
-$line2: random(10)+5;
-$line3: random(10)+5;
+$line1: random(10)+10;
+$line2: random(10)+10;
+$line3: random(10)+10n;
 
 $start1: random(500);
 $start2: random(500);
@@ -274,16 +276,16 @@ $duration5: random(200)+100;
 
 
 @keyframes line1 {
-    0%   {transform: translateX(15vw);}
-    100% {transform: translateX(-15vw);}
+    0%   {transform: translateX(25vw);}
+    100% {transform: translateX(-25vw);}
 }
 @keyframes line2 {
-    0%   {transform: translateX(15vw);}
-    100% {transform: translateX(-15vw);}
+    0%   {transform: translateX(25vw);}
+    100% {transform: translateX(-25vw);}
 }
 @keyframes line3 {
-    0%   {transform: translateX(15vw);}
-    100% {transform: translateX(-15vw);}
+    0%   {transform: translateX(25vw);}
+    100% {transform: translateX(-25vw);}
 }
 
 @keyframes ball1{
@@ -297,7 +299,7 @@ $duration5: random(200)+100;
 }
 
 .bigline {
-    width: 35vw;
+    width: 50vw;
     height: 5px;
     background-color: #8291911a;
 }

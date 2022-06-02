@@ -39,10 +39,12 @@ nav {
   nav ul {
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    width: 99%;
     background-color: #343a40;
     align-content: center;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 20px; }
     nav ul li {
       list-style: none;
       transition: all 0.3s ease 0s; }
@@ -117,7 +119,7 @@ nav {
   justify-content: center;
   align-items: center;
   animation-name: container1;
-  animation-duration: 451S;
+  animation-duration: 376S;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -126,7 +128,7 @@ nav {
   justify-content: center;
   align-items: center;
   animation-name: container2;
-  animation-duration: 523s;
+  animation-duration: 508s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -135,7 +137,7 @@ nav {
   justify-content: center;
   align-items: center;
   animation-name: container3;
-  animation-duration: 217s;
+  animation-duration: 297s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -144,7 +146,7 @@ nav {
   justify-content: center;
   align-items: center;
   animation-name: container4;
-  animation-duration: 626s;
+  animation-duration: 582s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -153,80 +155,80 @@ nav {
   justify-content: center;
   align-items: center;
   animation-name: container5;
-  animation-duration: 273s;
+  animation-duration: 179s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
 @keyframes container1 {
   0% {
-    transform: translate(-30vw, 10vh) rotate(302deg); }
+    transform: translate(-30vw, 10vh) rotate(352deg); }
   20% {
-    transform: translate(20vw, 40vh) rotate(179deg); }
+    transform: translate(20vw, 40vh) rotate(176deg); }
   45% {
-    transform: translate(-20vw, 20vh) rotate(97deg); }
+    transform: translate(-20vw, 20vh) rotate(61deg); }
   70% {
-    transform: translate(-40vw, 40vh) rotate(411deg); }
+    transform: translate(-40vw, 40vh) rotate(440deg); }
   100% {
-    transform: translate(30vw, 10vh) rotate(277deg); } }
+    transform: translate(30vw, 10vh) rotate(254deg); } }
 @keyframes container2 {
   0% {
-    transform: translate(35vw, 25vh) rotate(277deg); }
+    transform: translate(35vw, 25vh) rotate(254deg); }
   25% {
-    transform: translate(20vw, 10vh) rotate(411deg); }
+    transform: translate(20vw, 10vh) rotate(440deg); }
   50% {
-    transform: translate(10vw, 35vh) rotate(97deg); }
+    transform: translate(10vw, 35vh) rotate(61deg); }
   75% {
-    transform: translate(-10vw, 50vh) rotate(179deg); }
+    transform: translate(-10vw, 50vh) rotate(176deg); }
   100% {
-    transform: translate(20vw, 20vh) rotate(302deg); } }
+    transform: translate(20vw, 20vh) rotate(352deg); } }
 @keyframes container3 {
   0% {
-    transform: translate(40vw, 70vh) rotate(97deg); }
+    transform: translate(40vw, 70vh) rotate(61deg); }
   30% {
-    transform: translate(50vw, 60vh) rotate(97deg); }
+    transform: translate(50vw, 60vh) rotate(61deg); }
   55% {
-    transform: translate(20vw, 80vh) rotate(411deg); }
+    transform: translate(20vw, 80vh) rotate(440deg); }
   80% {
-    transform: translate(30vw, 65vh) rotate(179deg); }
+    transform: translate(30vw, 65vh) rotate(176deg); }
   100% {
-    transform: translate(10vw, 50vh) rotate(277deg); } }
+    transform: translate(10vw, 50vh) rotate(254deg); } }
 @keyframes container4 {
   0% {
-    transform: translate(-40vw, 90vh) rotate(179deg); }
+    transform: translate(-40vw, 90vh) rotate(176deg); }
   25% {
-    transform: translate(-30vw, 60vh) rotate(411deg); }
+    transform: translate(-30vw, 60vh) rotate(440deg); }
   50% {
-    transform: translate(-20vw, 40vh) rotate(411deg); }
+    transform: translate(-20vw, 40vh) rotate(440deg); }
   75% {
-    transform: translate(-25vw, 30vh) rotate(302deg); }
+    transform: translate(-25vw, 30vh) rotate(352deg); }
   100% {
-    transform: translate(-10vw, 90vh) rotate(97deg); } }
+    transform: translate(-10vw, 90vh) rotate(61deg); } }
 @keyframes container5 {
   0% {
-    transform: translate(-20vw, 40vh) rotate(411deg); }
+    transform: translate(-20vw, 40vh) rotate(440deg); }
   25% {
-    transform: translate(-40vw, 50vh) rotate(302deg); }
+    transform: translate(-40vw, 50vh) rotate(352deg); }
   50% {
-    transform: translate(-10vw, 80vh) rotate(179deg); }
+    transform: translate(-10vw, 80vh) rotate(176deg); }
   75% {
-    transform: translate(-30vw, 60vh) rotate(97deg); }
+    transform: translate(-30vw, 60vh) rotate(61deg); }
   100% {
-    transform: translate(-10vw, 10vh) rotate(411deg); } }
+    transform: translate(-10vw, 10vh) rotate(440deg); } }
 @keyframes line1 {
   0% {
-    transform: translateX(15vw); }
+    transform: translateX(25vw); }
   100% {
-    transform: translateX(-15vw); } }
+    transform: translateX(-25vw); } }
 @keyframes line2 {
   0% {
-    transform: translateX(15vw); }
+    transform: translateX(25vw); }
   100% {
-    transform: translateX(-15vw); } }
+    transform: translateX(-25vw); } }
 @keyframes line3 {
   0% {
-    transform: translateX(15vw); }
+    transform: translateX(25vw); }
   100% {
-    transform: translateX(-15vw); } }
+    transform: translateX(-25vw); } }
 @keyframes ball1 {
   0% {
     transform: scale(1, 1); }
@@ -238,7 +240,7 @@ nav {
   100% {
     transform: scale(1.5, 1.5); } }
 .bigline {
-  width: 35vw;
+  width: 50vw;
   height: 5px;
   background-color: #8291911a; }
 
@@ -280,7 +282,7 @@ nav {
   border-radius: 40px;
   background-color: #8291911a;
   animation-name: line2;
-  animation-duration: 7s;
+  animation-duration: 11s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse; }
 
@@ -291,7 +293,7 @@ nav {
   border-radius: 40px;
   background-color: #8291911a;
   animation-name: line3;
-  animation-duration: 11s;
+  animation-duration: 11ns;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
