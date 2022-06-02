@@ -6,21 +6,28 @@
   padding: 0; }
 
 body {
-  background-color: #4C5B61; }
+  background-color: #212529; }
 
 header {
   display: flex;
   justify-content: space-between;
-  height: 100px;
+  height: 75px;
   padding: 0 5px; }
   header .logo {
-    display: flex; }
+    width: 75px;
+    height: 75px; }
   header ul {
     display: flex;
     align-items: center; }
     header ul li {
       list-style: none;
-      margin: 0 px; }
+      margin: 0 5px;
+      transition: all 0.5s ease 0s; }
+      header ul li img {
+        width: 35px; }
+    header ul li:hover {
+      color: #5c2966;
+      transform: translateY(7px) scale(1.2); }
 
 nav {
   display: flex;
@@ -28,21 +35,24 @@ nav {
   justify-content: center;
   position: fixed;
   bottom: 0;
-  margin-bottom: 10px;
   height: 70px; }
   nav ul {
     display: flex;
     justify-content: space-around;
-    width: 95%;
-    background-color: #aaaaaa;
+    width: 100%;
+    background-color: #343a40;
     align-content: center;
-    align-items: center;
-    border-radius: 20px; }
+    align-items: center; }
     nav ul li {
-      list-style: none; }
+      list-style: none;
+      transition: all 0.3s ease 0s; }
       nav ul li a {
         text-decoration: none;
-        color: white; }
+        color: white;
+        font-family: primaryFont;
+        font-size: 20px; }
+      nav ul li a:hover {
+        color: grey; }
 
 .landing {
   z-index: 100;
@@ -69,18 +79,19 @@ nav {
     color: white;
     font-size: 25px;
     padding: 0 20px;
-    font-weight: lighter; }
+    font-weight: lighter;
+    max-width: 600px; }
   .landing button {
     font-family: primaryFont;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
-    background-color: rgba(105, 79, 93, 0.9);
+    background-color: #5c2966;
     border-color: #694F5D;
     border-radius: 40px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
     border-style: none;
-    width: 150px;
+    width: 125px;
     height: 50px;
     margin-top: 10vh;
     transition: all 0.3s ease 0s;
@@ -88,7 +99,7 @@ nav {
     z-index: 100; }
   .landing button:hover {
     background-color: white;
-    color: #694f5d;
+    color: #5c2966;
     transform: translateY(-7px); }
 
 .banner {
@@ -106,7 +117,7 @@ nav {
   justify-content: center;
   align-items: center;
   animation-name: container1;
-  animation-duration: 100s;
+  animation-duration: 397S;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -115,7 +126,7 @@ nav {
   justify-content: center;
   align-items: center;
   animation-name: container2;
-  animation-duration: 80s;
+  animation-duration: 596s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -124,7 +135,7 @@ nav {
   justify-content: center;
   align-items: center;
   animation-name: container3;
-  animation-duration: 100s;
+  animation-duration: 369s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -133,7 +144,7 @@ nav {
   justify-content: center;
   align-items: center;
   animation-name: container4;
-  animation-duration: 100s;
+  animation-duration: 689s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -142,12 +153,13 @@ nav {
   justify-content: center;
   align-items: center;
   animation-name: container5;
-  animation-duration: 80s;
+  animation-duration: 108s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
 @keyframes container1 {
   0% {
+<<<<<<< HEAD
     transform: translate(-500px, 400px) rotate(124deg); }
   20% {
     transform: translate(-400px, 300px) rotate(432deg); }
@@ -201,16 +213,76 @@ nav {
     transform: rotate(399deg) translate(100px, 100px); }
   100% {
     transform: rotate(260deg) translate(0px, 0px); } }
+=======
+    transform: translate(-30vw, 10vh) rotate(167deg); }
+  20% {
+    transform: translate(20vw, 40vh) rotate(261deg); }
+  45% {
+    transform: translate(-20vw, 20vh) rotate(760deg); }
+  70% {
+    transform: translate(-40vw, 40vh) rotate(317deg); }
+  100% {
+    transform: translate(30vw, 10vh) rotate(253deg); } }
+@keyframes container2 {
+  0% {
+    transform: translate(35vw, 25vh) rotate(253deg); }
+  25% {
+    transform: translate(20vw, 10vh) rotate(317deg); }
+  50% {
+    transform: translate(10vw, 35vh) rotate(760deg); }
+  75% {
+    transform: translate(-10vw, 50vh) rotate(261deg); }
+  100% {
+    transform: translate(20vw, 20vh) rotate(167deg); } }
+@keyframes container3 {
+  0% {
+    transform: translate(40vw, 70vh) rotate(760deg); }
+  30% {
+    transform: translate(50vw, 60vh) rotate(760deg); }
+  55% {
+    transform: translate(20vw, 80vh) rotate(317deg); }
+  80% {
+    transform: translate(30vw, 65vh) rotate(261deg); }
+  100% {
+    transform: translate(10vw, 50vh) rotate(253deg); } }
+@keyframes container4 {
+  0% {
+    transform: translate(-40vw, 90vh) rotate(261deg); }
+  25% {
+    transform: translate(-30vw, 60vh) rotate(317deg); }
+  50% {
+    transform: translate(-20vw, 40vh) rotate(317deg); }
+  75% {
+    transform: translate(-25vw, 30vh) rotate(167deg); }
+  100% {
+    transform: translate(-10vw, 90vh) rotate(760deg); } }
+@keyframes container5 {
+  0% {
+    transform: translate(-20vw, 40vh) rotate(317deg); }
+  25% {
+    transform: translate(-40vw, 50vh) rotate(167deg); }
+  50% {
+    transform: translate(-10vw, 80vh) rotate(261deg); }
+  75% {
+    transform: translate(-30vw, 60vh) rotate(760deg); }
+  100% {
+    transform: translate(-10vw, 10vh) rotate(317deg); } }
+>>>>>>> animatedbackground
 @keyframes line1 {
   0% {
-    transform: translateX(-10px); }
+    transform: translateX(15vw); }
   100% {
-    transform: translateX(-505px); } }
+    transform: translateX(-15vw); } }
 @keyframes line2 {
   0% {
-    transform: translateX(-10px); }
+    transform: translateX(15vw); }
   100% {
-    transform: translateX(-340px); } }
+    transform: translateX(-15vw); } }
+@keyframes line3 {
+  0% {
+    transform: translateX(15vw); }
+  100% {
+    transform: translateX(-15vw); } }
 @keyframes ball1 {
   0% {
     transform: scale(1, 1); }
@@ -218,18 +290,18 @@ nav {
     transform: scale(1.5, 1.5); } }
 @keyframes ball2 {
   0% {
-    transform: scale(1, 1) translateX(); }
+    transform: scale(1, 1); }
   100% {
-    transform: scale(1.5, 1.5) translateX(-10px); } }
+    transform: scale(1.5, 1.5); } }
 .bigline {
-  width: 500px;
-  height: 3px;
-  background-color: #82919120; }
+  width: 35vw;
+  height: 5px;
+  background-color: #8291911a; }
 
 .circleone {
-  width: 1vw;
-  height: 1vw;
-  background-color: #82919120;
+  width: 10px;
+  height: 10px;
+  background-color: #829191;
   border-radius: 50%;
   animation-name: ball1;
   animation-duration: 5s;
@@ -237,9 +309,9 @@ nav {
   animation-direction: alternate; }
 
 .circletwo {
-  width: 15px;
-  height: 15px;
-  background-color: #82919120;
+  width: 10px;
+  height: 10px;
+  background-color: #829191;
   border-radius: 50%;
   animation-name: ball2;
   animation-duration: 5s;
@@ -247,33 +319,53 @@ nav {
   animation-direction: alternate-reverse; }
 
 .lineone {
-  height: 15px;
+  position: absolute;
+  height: 10px;
   width: 5px;
-  border-radius: 15%;
-  background-color: #82919120;
+  border-radius: 40px;
+  background-color: #8291911a;
   animation-name: line1;
+<<<<<<< HEAD
   animation-duration: 6s;
+=======
+  animation-duration: 9s;
+>>>>>>> animatedbackground
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
 .linetwo {
-  height: 15px;
+  position: absolute;
+  height: 10px;
   width: 5px;
+<<<<<<< HEAD
   border-radius: 15%;
   background-color: #82919120;
   animation-name: line1;
+=======
+  border-radius: 40px;
+  background-color: #8291911a;
+  animation-name: line2;
+>>>>>>> animatedbackground
   animation-duration: 13s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse; }
 
 .linethree {
-  height: 15px;
+  position: absolute;
+  height: 10px;
   width: 5px;
+<<<<<<< HEAD
   border-radius: 15%;
   background-color: #82919120;
   animation-name: line1;
   animation-duration: 11s;
+=======
+  border-radius: 40px;
+  background-color: #8291911a;
+  animation-name: line3;
+  animation-duration: 13s;
+>>>>>>> animatedbackground
   animation-iteration-count: infinite;
-  animation-direction: alternate-reverse; }
+  animation-direction: alternate; }
 
 /*# sourceMappingURL=styles.css.map */
