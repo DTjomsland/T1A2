@@ -1,6 +1,7 @@
 $neutral1: #949b96;
-$neutral2: #4C5B61;
-$neutral3: #aaaaaa;
+$neutral2: #212529;
+$neutral3: #343a40;
+$neutral4: #343a40;
 $accent1: #694F5D;
 
 
@@ -16,24 +17,34 @@ $accent1: #694F5D;
 }
 
 body {
-    background-color: #4C5B61;
+    background-color: $neutral2;
 }
 
 
 header {
     display: flex;   
     justify-content: space-between;
-    height: 100px;
+    height: 75px;
     padding: 0 5px;
+    
     .logo {
-        display: flex;
+        width: 75px;
+        height: 75px;
     }
     ul {
         display: flex;
         align-items: center;
         li{
             list-style: none;
-            margin: 0 px
+            margin: 0 5px;
+            transition: all 0.5s ease 0s;
+            img {
+                width: 35px;
+            }
+        }
+        li:hover {
+            color: #5c2966;
+            transform: translateY(7px) scale(1.2);
         }
     };
 }
@@ -50,16 +61,23 @@ nav {
         display:flex;
         justify-content: space-around;
         width: 95%;
-        background-color: $neutral3;
+        background-color: #343a40f2;
         align-content: center;
         align-items: center;
         border-radius: 20px;
         li {
             list-style: none;
+            transition: all 0.3s ease 0s;
             a {
                 text-decoration: none;
                 color: white;
+                font-family: primaryFont;
+                font-size: 20px;
             }
+        }
+        li:hover {
+            transform: scale(0.90);
+            border-radius: 20px;
         }
     }
 }
@@ -93,18 +111,19 @@ nav {
         font-size: 25px;
         padding: 0 20px;
         font-weight: lighter;
+        max-width: 600px;
     }
     button {
         font-family: primaryFont;
         color: white;
-        font-size: 25px;
+        font-size: 20px;
         font-weight: bold;
-        background-color: rgba(105, 79, 93, 0.9);
+        background-color: #5c2966;
         border-color: $accent1;
         border-radius: 40px;
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
         border-style: none;
-        width: 150px;
+        width: 125px;
         height: 50px;
         margin-top: 10vh;
         transition: all 0.3s ease 0s;
@@ -113,7 +132,7 @@ nav {
     }
         button:hover {
             background-color: white;
-            color: rgba(105, 79, 93, 1);
+            color: #5c2966;
             transform: translateY(-7px);
           }
     
@@ -137,6 +156,11 @@ $start3: random(10)+5;
 $start4: random(10)+5;
 $start5:random(10)+5 ;
 $rotation: random(360);
+$duration1: random(200)+300;
+$duration2: random(200)+400;
+$duration3: random(200)+200;
+$duration4: random(200)+500;
+$duration5: random(200)+100;
 
 
 
@@ -160,7 +184,7 @@ $rotation: random(360);
     justify-content: center;
     align-items: center;
     animation-name: container1;
-    animation-duration: 100s;
+    animation-duration: $duration1+S;
     animation-iteration-count:infinite;
     animation-direction: alternate;
 }
@@ -171,7 +195,7 @@ $rotation: random(360);
     justify-content: center;
     align-items: center;
     animation-name: container2;
-    animation-duration: 80s;
+    animation-duration: $duration2+s;
     animation-iteration-count:infinite;
     animation-direction: alternate;
 }
@@ -182,7 +206,7 @@ $rotation: random(360);
     justify-content: center;
     align-items: center;
     animation-name: container3;
-    animation-duration: 100s;
+    animation-duration: $duration3+s;
     animation-iteration-count:infinite;
     animation-direction: alternate;
 }
@@ -193,7 +217,7 @@ $rotation: random(360);
     justify-content: center;
     align-items: center;
     animation-name: container4;
-    animation-duration: 100s;
+    animation-duration: $duration4+s;
     animation-iteration-count:infinite;
     animation-direction: alternate;
 }
@@ -204,59 +228,63 @@ $rotation: random(360);
     justify-content: center;
     align-items: center;
     animation-name: container5;
-    animation-duration: 80s;
+    animation-duration: $duration5+s;
     animation-iteration-count:infinite;
     animation-direction: alternate;
 }
 
 @keyframes container1 {
-     0%  {transform: translate(-500px, 400px) rotate($rot1+deg)}
-    20% {transform: translate(-400px, 300px) rotate($rot2+deg)}
-    45% {transform: translate(-300px, 0px) rotate($rot3+deg)}
-    70% {transform: translate(0px, 200px) rotate($rot4+deg)}
-    100% {transform: translate(300px, -400px) rotate($rot5+deg)}
+     0%  {transform: translate(-30vw, 10vh) rotate($rot1+deg)}
+    20% {transform: translate(20vw, 40vh) rotate($rot2+deg)}
+    45% {transform: translate(-20vw, 20vh) rotate($rot3+deg)}
+    70% {transform: translate(-40vw,40vh) rotate($rot4+deg)}
+    100% {transform: translate(30vw, 10vh) rotate($rot5+deg)}
 }
 
 @keyframes container2 {
-    0%   {transform: translate(500px, 400px) rotate($rot5+deg);}
-    25%  {transform: translate(600px, 300px) rotate($rot4+deg);}
-    50%  {transform: translate(650px, 100px) rotate($rot3+deg);}
-    75%  {transform: translate(600px, 0px) rotate($rot2+deg);}
-    100% {transform: translate(400px, -200px)rotate($rot1+deg);}
+    0%   {transform: translate(35vw, 25vh) rotate($rot5+deg);}
+    25%  {transform: translate(20vw, 10vh) rotate($rot4+deg);}
+    50%  {transform: translate(10vw, 35vh) rotate($rot3+deg);}
+    75%  {transform: translate(-10vw, 50vh) rotate($rot2+deg);}
+    100% {transform: translate(20vw, 20vh)rotate($rot1+deg);}
 }
 
 @keyframes container3 {
-    0%   {transform: rotate($rot3+deg) translate(-400px,500px);}
-    30%  {transform: rotate($rot3+deg) translate(-300px,600px);}
-    55%  {transform: rotate($rot4+deg) translate(-200px,700px);}
-    80%  {transform: rotate($rot2+deg) translate(-100px,200px);}
-    100% {transform: rotate($rot5+deg) translate(100px,300px);}
+    0%   {transform: translate(40vw,70vh) rotate($rot3+deg);}
+    30%  {transform: translate(50vw,60vh) rotate($rot3+deg);}
+    55%  {transform: translate(20vw,80vh) rotate($rot4+deg);}
+    80%  {transform: translate(30vw,65vh) rotate($rot2+deg);}
+    100% {transform: translate(10vw,50vh) rotate($rot5+deg);}
 }
 
 @keyframes container4 {
-    0%   {transform: rotate($rot2+deg) translate(100px,-500px);}
-    25%  {transform: rotate($rot4+deg) translate(200px,-400px);}
-    50%  {transform: rotate($rot4+deg) translate(300px,-500px);}
-    75%  {transform: rotate($rot1+deg) translate(500px,-600px);}
-    100% {transform: rotate($rot3+deg) translate(100px,-700px);}
+    0%   {transform: translate(-40vw,90vh) rotate($rot2+deg);}
+    25%  {transform: translate(-30vw,60vh) rotate($rot4+deg);}
+    50%  {transform: translate(-20vw,40vh) rotate($rot4+deg);}
+    75%  {transform: translate(-25vw,30vh) rotate($rot1+deg);}
+    100% {transform: translate(-10vw,90vh) rotate($rot3+deg);}
 }
 
 @keyframes container5 {
-    0%   {transform: rotate($rot4+deg) translate(0px,0px);}
-    25%  {transform: rotate($rot1+deg) translate(-200px,-200px);}
-    50%  {transform: rotate($rot2+deg) translate(-100px,-300px);}
-    75%  {transform: rotate($rot3+deg) translate(100px,100px);}
-    100% {transform: rotate($rot4+deg) translate(0px,0px);}
+    0%   {transform: translate(-20vw,40vh) rotate($rot4+deg);}
+    25%  {transform: translate(-40vw,50vh) rotate($rot1+deg);}
+    50%  {transform: translate(-10vw,80vh) rotate($rot2+deg);}
+    75%  {transform: translate(-30vw,60vh) rotate($rot3+deg);}
+    100% {transform: translate(-10vw,10vh) rotate($rot4+deg);}
 }
 
 
 @keyframes line1 {
-    0%   {transform: translateX(-10px);}
-    100% {transform: translateX(-505px);}
+    0%   {transform: translateX(15vw);}
+    100% {transform: translateX(-15vw);}
 }
 @keyframes line2 {
-    0%   {transform: translateX(-10px);}
-    100% {transform: translateX(-340px);}
+    0%   {transform: translateX(15vw);}
+    100% {transform: translateX(-15vw);}
+}
+@keyframes line3 {
+    0%   {transform: translateX(15vw);}
+    100% {transform: translateX(-15vw);}
 }
 
 @keyframes ball1{
@@ -265,20 +293,20 @@ $rotation: random(360);
 }
 
 @keyframes ball2{
-    0%   {transform: scale(1,1) translateX();}
-    100% {transform: scale(1.5,1.5) translateX(-10px);}
+    0%   {transform: scale(1,1) }
+    100% {transform: scale(1.5,1.5);}
 }
 
 .bigline {
-    width: 500px;
-    height: 3px;
-    background-color: #82919120;
+    width: 35vw;
+    height: 5px;
+    background-color: #8291911a;
 }
 
 .circleone {
-    width: 1vw;
-    height: 1vw;
-    background-color: #82919120;
+    width: 10px;
+    height: 10px;
+    background-color: #829191;
     border-radius: 50%;
     animation-name: ball1;
     animation-duration: 5s;
@@ -288,9 +316,9 @@ $rotation: random(360);
 }
 
 .circletwo {
-    width: 15px;
-    height: 15px;
-    background-color: #82919120;
+    width: 10px;
+    height: 10px;
+    background-color: #829191;
     border-radius: 50%;
     animation-name: ball2;
     animation-duration: 5s;
@@ -299,10 +327,11 @@ $rotation: random(360);
 }
 
 .lineone {
-    height: 15px;
+    position: absolute;
+    height: 10px;
     width: 5px;
-    border-radius: 15%;
-    background-color: #82919120;
+    border-radius: 40px;
+    background-color: #8291911a;
     animation-name: line1;
     animation-duration: $line1+s;
     animation-iteration-count:infinite;
@@ -310,23 +339,25 @@ $rotation: random(360);
 }
 
 .linetwo {
-    height: 15px;
+    position: absolute;
+    height: 10px;
     width: 5px;
-    border-radius: 15%;
-    background-color: #82919120;
-    animation-name: line1;
+    border-radius: 40px;
+    background-color: #8291911a;
+    animation-name: line2;
     animation-duration: $line2+s;
     animation-iteration-count:infinite;
     animation-direction: alternate-reverse;
 }
 
 .linethree {
-    height: 15px;
+    position: absolute;
+    height: 10px;
     width: 5px;
-    border-radius: 15%;
-    background-color: #82919120;
-    animation-name: line1;
+    border-radius: 40px;
+    background-color: #8291911a;
+    animation-name: line3;
     animation-duration: $line3+s;
     animation-iteration-count:infinite;
-    animation-direction: alternate-reverse;
+    animation-direction: alternate;
 }
