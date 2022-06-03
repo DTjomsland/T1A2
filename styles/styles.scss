@@ -1,5 +1,5 @@
 $neutral1: #949b96;
-$neutral2: #212529;
+$neutral2: #1f1f24;
 $neutral3: #343a40;
 $neutral4: #343a40;
 $accent1: #694F5D;
@@ -43,7 +43,6 @@ header {
             }
         }
         li:hover {
-            color: #5c2966;
             transform: translateY(7px) scale(1.2);
         }
     };
@@ -60,7 +59,7 @@ nav {
         display: flex;
         justify-content: space-around;
         width: 99%;
-        background-color: #343a4075;
+        background-color: #2f2f37;
         align-content: center;
         align-items: center;
         margin-bottom: 10px;
@@ -70,18 +69,32 @@ nav {
             list-style: none;
             transition: all 0.1s ease 0s;
             a {
+                display: flex;
+                align-content: center;
+                align-items: center;
                 text-decoration: none;
-                color: white;
+                color: rgb(255, 255, 255);
                 font-family: primaryFont;
                 font-size: 20px;
                 transition: all 0.3s ease 0s;
-
+                img {
+                    height: 18px;
+                    margin-right: 5px; 
+                }
+               
             }
             a:hover {
-                color:grey;
+                filter: brightness(0) saturate(100%) invert(20%) sepia(67%) saturate(839%) hue-rotate(250deg) brightness(89%) contrast(95%);
             }
-        
         }
+    }
+}
+@media only screen and (max-width: 800px) {
+    .displaynone {
+        display:none;
+    }
+    .navicon {
+        height: 30px;
     }
 }
 
@@ -135,7 +148,7 @@ nav {
         button:hover {
             background-color: white;
             color: #5c2966;
-            transform: translateY(-7px);
+            transform: translateY(-6px);
           }
     
 }
@@ -280,19 +293,11 @@ $duration5: random(200)+100;
     0%   {transform: translateX(22.5vw);}
     100% {transform: translateX(-22.5vw);}
 }
-@keyframes line2 {
-    0%   {transform: translateX(22.5vw);}
-    100% {transform: translateX(-22.5vw);}
-}
 
-@keyframes line3 {
-    0%   {transform: translateX(22.5vw);}
-    100% {transform: translateX(-22.5vw);}
-}
 
 @keyframes ball1{
     0%   {transform: scale(1,1);}
-    100% {transform: scale(1.5,1.5);}
+    100% {transform: scale(1.8,1.8);}
 }
 
 @keyframes ball2{
@@ -309,19 +314,18 @@ $duration5: random(200)+100;
 .circleone {
     width: 10px;
     height: 10px;
-    background-color: #829191;
+    background-color: #878788;
     border-radius: 50%;
     animation-name: ball1;
     animation-duration: 5s;
     animation-iteration-count:infinite;
     animation-direction: alternate;
-
 }
 
 .circletwo {
     width: 10px;
     height: 10px;
-    background-color: #829191;
+    background-color: #878788;
     border-radius: 50%;
     animation-name: ball2;
     animation-duration: 5s;
@@ -334,7 +338,7 @@ $duration5: random(200)+100;
     height: 10px;
     width: 5px;
     border-radius: 40px;
-    background-color: #8291911a;
+    background-color: #8787881a;
     animation-name: line1;
     animation-duration: $line1+s;
     animation-iteration-count:infinite;
@@ -346,8 +350,8 @@ $duration5: random(200)+100;
     height: 10px;
     width: 5px;
     border-radius: 40px;
-    background-color: #8291911a;
-    animation-name: line2;
+    background-color: #8787881a;
+    animation-name: line1;
     animation-duration: $line2+s;
     animation-iteration-count:infinite;
     animation-direction: alternate-reverse;
@@ -359,8 +363,9 @@ $duration5: random(200)+100;
     width: 5px;
     border-radius: 40px;
     background-color: #8291911a;
-    animation-name: line3;
+    animation-name: line1;
     animation-duration: $line3+s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
+
