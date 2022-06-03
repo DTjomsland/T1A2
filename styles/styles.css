@@ -55,12 +55,12 @@ nav {
         color: white;
         font-family: primaryFont;
         font-size: 20px;
-        transition: all 0.3s ease 0s; }
+        transition: 0.2s; }
         nav ul li a img {
-          height: 18px;
+          height: 16px;
           margin-right: 5px; }
       nav ul li a:hover {
-        filter: brightness(0) saturate(100%) invert(20%) sepia(67%) saturate(839%) hue-rotate(250deg) brightness(89%) contrast(95%); }
+        filter: brightness(0) saturate(100%) invert(5%) sepia(3%) saturate(5674%) hue-rotate(201deg) brightness(95%) contrast(82%); }
 
 @media only screen and (max-width: 800px) {
   .displaynone {
@@ -97,14 +97,15 @@ nav {
     max-width: 700px; }
   .landing button {
     font-family: primaryFont;
-    color: white;
+    color: #5c2966;
     font-size: 20px;
-    font-weight: bold;
-    background-color: #5c2966;
+    font-weight: bolder;
+    background-color: transparent;
     border-color: #694F5D;
-    border-radius: 40px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
-    border-style: none;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #5c2966;
+    border-width: 3px;
     width: 125px;
     height: 50px;
     margin-top: 10vh;
@@ -112,8 +113,9 @@ nav {
     cursor: pointer;
     z-index: 100; }
   .landing button:hover {
-    background-color: white;
-    color: #5c2966;
+    outline: 0;
+    color: #fff;
+    background-color: #5c2966;
     transform: translateY(-6px); }
 
 .banner {
@@ -131,7 +133,7 @@ nav {
   justify-content: center;
   align-items: center;
   animation-name: container1;
-  animation-duration: 393S;
+  animation-duration: 419S;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -140,7 +142,7 @@ nav {
   justify-content: center;
   align-items: center;
   animation-name: container2;
-  animation-duration: 598s;
+  animation-duration: 452s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -149,7 +151,7 @@ nav {
   justify-content: center;
   align-items: center;
   animation-name: container3;
-  animation-duration: 321s;
+  animation-duration: 305s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -158,7 +160,7 @@ nav {
   justify-content: center;
   align-items: center;
   animation-name: container4;
-  animation-duration: 600s;
+  animation-duration: 585s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -167,65 +169,65 @@ nav {
   justify-content: center;
   align-items: center;
   animation-name: container5;
-  animation-duration: 205s;
+  animation-duration: 272s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
 @keyframes container1 {
   0% {
-    transform: translate(-30vw, 10vh) rotate(40deg); }
+    transform: translate(-30vw, 10vh) rotate(124deg); }
   20% {
-    transform: translate(20vw, 40vh) rotate(156deg); }
+    transform: translate(20vw, 40vh) rotate(87deg); }
   45% {
-    transform: translate(-20vw, 20vh) rotate(46deg); }
+    transform: translate(-20vw, 20vh) rotate(23deg); }
   70% {
-    transform: translate(-40vw, 40vh) rotate(332deg); }
+    transform: translate(-40vw, 40vh) rotate(114deg); }
   100% {
-    transform: translate(30vw, 10vh) rotate(349deg); } }
+    transform: translate(30vw, 10vh) rotate(193deg); } }
 @keyframes container2 {
   0% {
-    transform: translate(35vw, 25vh) rotate(349deg); }
+    transform: translate(35vw, 25vh) rotate(193deg); }
   25% {
-    transform: translate(20vw, 10vh) rotate(332deg); }
+    transform: translate(20vw, 10vh) rotate(114deg); }
   50% {
-    transform: translate(10vw, 35vh) rotate(46deg); }
+    transform: translate(10vw, 35vh) rotate(23deg); }
   75% {
-    transform: translate(-10vw, 50vh) rotate(156deg); }
+    transform: translate(-10vw, 50vh) rotate(87deg); }
   100% {
-    transform: translate(20vw, 20vh) rotate(40deg); } }
+    transform: translate(20vw, 20vh) rotate(124deg); } }
 @keyframes container3 {
   0% {
-    transform: translate(40vw, 70vh) rotate(46deg); }
+    transform: translate(40vw, 70vh) rotate(23deg); }
   30% {
-    transform: translate(50vw, 60vh) rotate(46deg); }
+    transform: translate(50vw, 60vh) rotate(23deg); }
   55% {
-    transform: translate(20vw, 80vh) rotate(332deg); }
+    transform: translate(20vw, 80vh) rotate(114deg); }
   80% {
-    transform: translate(30vw, 65vh) rotate(156deg); }
+    transform: translate(30vw, 65vh) rotate(87deg); }
   100% {
-    transform: translate(10vw, 50vh) rotate(349deg); } }
+    transform: translate(10vw, 50vh) rotate(193deg); } }
 @keyframes container4 {
   0% {
-    transform: translate(-40vw, 90vh) rotate(156deg); }
+    transform: translate(-40vw, 90vh) rotate(87deg); }
   25% {
-    transform: translate(-30vw, 60vh) rotate(332deg); }
+    transform: translate(-30vw, 60vh) rotate(114deg); }
   50% {
-    transform: translate(-20vw, 40vh) rotate(332deg); }
+    transform: translate(-20vw, 40vh) rotate(114deg); }
   75% {
-    transform: translate(-25vw, 30vh) rotate(40deg); }
+    transform: translate(-25vw, 30vh) rotate(124deg); }
   100% {
-    transform: translate(-10vw, 90vh) rotate(46deg); } }
+    transform: translate(-10vw, 90vh) rotate(23deg); } }
 @keyframes container5 {
   0% {
-    transform: translate(-20vw, 40vh) rotate(332deg); }
+    transform: translate(-20vw, 40vh) rotate(114deg); }
   25% {
-    transform: translate(-40vw, 50vh) rotate(40deg); }
+    transform: translate(-40vw, 50vh) rotate(124deg); }
   50% {
-    transform: translate(-10vw, 80vh) rotate(156deg); }
+    transform: translate(-10vw, 80vh) rotate(87deg); }
   75% {
-    transform: translate(-30vw, 60vh) rotate(46deg); }
+    transform: translate(-30vw, 60vh) rotate(23deg); }
   100% {
-    transform: translate(-10vw, 10vh) rotate(332deg); } }
+    transform: translate(-10vw, 10vh) rotate(114deg); } }
 @keyframes line1 {
   0% {
     transform: translateX(22.5vw); }
@@ -273,7 +275,7 @@ nav {
   border-radius: 40px;
   background-color: #8787881a;
   animation-name: line1;
-  animation-duration: 15s;
+  animation-duration: 18s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -284,7 +286,7 @@ nav {
   border-radius: 40px;
   background-color: #8787881a;
   animation-name: line1;
-  animation-duration: 15s;
+  animation-duration: 11s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse; }
 
@@ -295,7 +297,7 @@ nav {
   border-radius: 40px;
   background-color: #8291911a;
   animation-name: line1;
-  animation-duration: 15s;
+  animation-duration: 16s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
