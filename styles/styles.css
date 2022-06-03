@@ -34,7 +34,8 @@ nav {
   justify-content: center;
   position: fixed;
   bottom: 0;
-  height: 70px; }
+  height: 70px;
+  z-index: 100; }
   nav ul {
     display: flex;
     justify-content: space-around;
@@ -129,7 +130,7 @@ nav {
   .aboutme article .aboutimg {
     width: 350px;
     border-radius: 50%; }
-  .aboutme article h2 {
+  .aboutme article h1 {
     margin-top: 40px;
     font-family: primaryFont;
     font-size: 35px;
@@ -141,7 +142,58 @@ nav {
     font-family: primaryFont;
     font-size: 16px;
     color: white;
-    padding: 25px; }
+    padding: 25px 25px 75px 25px; }
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-items: center; }
+  .experience h2 {
+    font-family: primaryFont;
+    font-size: 30px;
+    color: #1f1f24;
+    padding: 25px 0; }
+  .experience .card {
+    background-color: #ebebeb;
+    width: 85vw;
+    color: #474e5f;
+    border-radius: 10px;
+    font-family: primaryFont;
+    padding: 15px 15px;
+    margin: 10px 0; }
+    .experience .card .cardtitle {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .experience .card .cardtitle h3 {
+        font-size: 20px; }
+    .experience .card p {
+      margin-top: 25px; }
+    .experience .card form {
+      display: flex;
+      justify-content: center; }
+    .experience .card button {
+      width: 100%;
+      font-family: primaryFont;
+      color: #5c2966;
+      font-weight: bolder;
+      font-size: 18px;
+      background-color: transparent;
+      border-radius: 10px;
+      border-style: solid;
+      border-color: #5c2966;
+      width: 100px;
+      height: 30px;
+      margin-top: 20px;
+      transition: all 0.3s ease 0s;
+      cursor: pointer;
+      z-index: 3; }
+    .experience .card button:hover {
+      outline: 0;
+      color: #5c2966;
+      background-color: white;
+      transform: translateY(-6px); }
 
 .banner {
   overflow: hidden;
@@ -158,7 +210,7 @@ nav {
   justify-content: center;
   align-items: center;
   animation-name: container1;
-  animation-duration: 341S;
+  animation-duration: 472S;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -167,7 +219,7 @@ nav {
   justify-content: center;
   align-items: center;
   animation-name: container2;
-  animation-duration: 511s;
+  animation-duration: 425s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -176,7 +228,7 @@ nav {
   justify-content: center;
   align-items: center;
   animation-name: container3;
-  animation-duration: 395s;
+  animation-duration: 366s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -185,7 +237,7 @@ nav {
   justify-content: center;
   align-items: center;
   animation-name: container4;
-  animation-duration: 642s;
+  animation-duration: 634s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -194,65 +246,65 @@ nav {
   justify-content: center;
   align-items: center;
   animation-name: container5;
-  animation-duration: 171s;
+  animation-duration: 158s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
 @keyframes container1 {
   0% {
-    transform: translate(-30vw, 10vh) rotate(61deg); }
+    transform: translate(-30vw, 10vh) rotate(143deg); }
   20% {
-    transform: translate(20vw, 40vh) rotate(370deg); }
+    transform: translate(20vw, 40vh) rotate(143deg); }
   45% {
-    transform: translate(-20vw, 20vh) rotate(469deg); }
+    transform: translate(-20vw, 20vh) rotate(515deg); }
   70% {
-    transform: translate(-40vw, 40vh) rotate(282deg); }
+    transform: translate(-40vw, 40vh) rotate(55deg); }
   100% {
-    transform: translate(30vw, 10vh) rotate(396deg); } }
+    transform: translate(30vw, 10vh) rotate(37deg); } }
 @keyframes container2 {
   0% {
-    transform: translate(35vw, 25vh) rotate(396deg); }
+    transform: translate(35vw, 25vh) rotate(37deg); }
   25% {
-    transform: translate(20vw, 10vh) rotate(282deg); }
+    transform: translate(20vw, 10vh) rotate(55deg); }
   50% {
-    transform: translate(10vw, 35vh) rotate(469deg); }
+    transform: translate(10vw, 35vh) rotate(515deg); }
   75% {
-    transform: translate(-10vw, 50vh) rotate(370deg); }
+    transform: translate(-10vw, 50vh) rotate(143deg); }
   100% {
-    transform: translate(20vw, 20vh) rotate(61deg); } }
+    transform: translate(20vw, 20vh) rotate(143deg); } }
 @keyframes container3 {
   0% {
-    transform: translate(40vw, 70vh) rotate(469deg); }
+    transform: translate(40vw, 70vh) rotate(515deg); }
   30% {
-    transform: translate(50vw, 60vh) rotate(469deg); }
+    transform: translate(50vw, 60vh) rotate(515deg); }
   55% {
-    transform: translate(20vw, 80vh) rotate(282deg); }
+    transform: translate(20vw, 80vh) rotate(55deg); }
   80% {
-    transform: translate(30vw, 65vh) rotate(370deg); }
+    transform: translate(30vw, 65vh) rotate(143deg); }
   100% {
-    transform: translate(10vw, 50vh) rotate(396deg); } }
+    transform: translate(10vw, 50vh) rotate(37deg); } }
 @keyframes container4 {
   0% {
-    transform: translate(-40vw, 90vh) rotate(370deg); }
+    transform: translate(-40vw, 90vh) rotate(143deg); }
   25% {
-    transform: translate(-30vw, 60vh) rotate(282deg); }
+    transform: translate(-30vw, 60vh) rotate(55deg); }
   50% {
-    transform: translate(-20vw, 40vh) rotate(282deg); }
+    transform: translate(-20vw, 40vh) rotate(55deg); }
   75% {
-    transform: translate(-25vw, 30vh) rotate(61deg); }
+    transform: translate(-25vw, 30vh) rotate(143deg); }
   100% {
-    transform: translate(-10vw, 90vh) rotate(469deg); } }
+    transform: translate(-10vw, 90vh) rotate(515deg); } }
 @keyframes container5 {
   0% {
-    transform: translate(-20vw, 40vh) rotate(282deg); }
+    transform: translate(-20vw, 40vh) rotate(55deg); }
   25% {
-    transform: translate(-40vw, 50vh) rotate(61deg); }
+    transform: translate(-40vw, 50vh) rotate(143deg); }
   50% {
-    transform: translate(-10vw, 80vh) rotate(370deg); }
+    transform: translate(-10vw, 80vh) rotate(143deg); }
   75% {
-    transform: translate(-30vw, 60vh) rotate(469deg); }
+    transform: translate(-30vw, 60vh) rotate(515deg); }
   100% {
-    transform: translate(-10vw, 10vh) rotate(282deg); } }
+    transform: translate(-10vw, 10vh) rotate(55deg); } }
 @keyframes line1 {
   0% {
     transform: translateX(22.5vw); }
@@ -300,7 +352,7 @@ nav {
   border-radius: 40px;
   background-color: #8787881a;
   animation-name: line1;
-  animation-duration: 16s;
+  animation-duration: 11s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -311,7 +363,7 @@ nav {
   border-radius: 40px;
   background-color: #8787881a;
   animation-name: line1;
-  animation-duration: 15s;
+  animation-duration: 19s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse; }
 
@@ -322,7 +374,7 @@ nav {
   border-radius: 40px;
   background-color: #8291911a;
   animation-name: line1;
-  animation-duration: 16s;
+  animation-duration: 17s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
