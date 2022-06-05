@@ -365,7 +365,65 @@ h2 {
 .projects img {
   border-radius: 10px;
   transition: 0.3s ease; }
-.projects img:hover {
+.projects .col {
+  position: relative; }
+.projects .backgroundimg {
+  display: block;
+  width: 100%;
+  height: auto; }
+.projects .overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 99%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: #1f1f24;
+  border-radius: 10px; }
+  .projects .overlay h3 {
+    color: white;
+    font-family: quickLight;
+    font-size: 20px;
+    margin: 100px 0 50px 0; }
+  .projects .overlay p {
+    font-family: quickLight;
+    color: white;
+    width: 90%;
+    margin-bottom: 25px; }
+  .projects .overlay img {
+    width: 225px;
+    margin-bottom: 25px; }
+  .projects .overlay button {
+    font-family: quickLight;
+    color: #BA01AA;
+    font-weight: bolder;
+    font-size: 18px;
+    background-color: transparent;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #BA01AA;
+    width: 150px;
+    height: 30px;
+    margin-top: 20px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    z-index: 3;
+    -webkit-backface-visibility: hidden; }
+  .projects .overlay button:hover {
+    outline: 0;
+    color: #1f1f24;
+    background-color: #BA01AA;
+    transform: translateY(-6px); }
+.projects .col:hover .overlay {
+  opacity: 1;
+  transform: scale(1.075); }
+.projects .col:hover .backgroundimg {
   transform: scale(1.05); }
 
 .banner {
@@ -383,7 +441,11 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container1;
+<<<<<<< HEAD
   animation-duration: 361S;
+=======
+  animation-duration: 348S;
+>>>>>>> projectpage
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -392,7 +454,11 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container2;
+<<<<<<< HEAD
   animation-duration: 575s;
+=======
+  animation-duration: 467s;
+>>>>>>> projectpage
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -401,7 +467,11 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container3;
+<<<<<<< HEAD
   animation-duration: 247s;
+=======
+  animation-duration: 320s;
+>>>>>>> projectpage
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -410,7 +480,11 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container4;
+<<<<<<< HEAD
   animation-duration: 651s;
+=======
+  animation-duration: 598s;
+>>>>>>> projectpage
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -419,12 +493,17 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container5;
+<<<<<<< HEAD
   animation-duration: 105s;
+=======
+  animation-duration: 164s;
+>>>>>>> projectpage
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
 @keyframes container1 {
   0% {
+<<<<<<< HEAD
     transform: translate(-30vw, 10vh) rotate(55deg); }
   20% {
     transform: translate(20vw, 40vh) rotate(445deg); }
@@ -478,6 +557,61 @@ h2 {
     transform: translate(-30vw, 60vh) rotate(787deg); }
   100% {
     transform: translate(-10vw, 10vh) rotate(466deg); } }
+=======
+    transform: translate(-30vw, 10vh) rotate(176deg); }
+  20% {
+    transform: translate(20vw, 40vh) rotate(450deg); }
+  45% {
+    transform: translate(-20vw, 20vh) rotate(399deg); }
+  70% {
+    transform: translate(-40vw, 40vh) rotate(467deg); }
+  100% {
+    transform: translate(30vw, 10vh) rotate(157deg); } }
+@keyframes container2 {
+  0% {
+    transform: translate(35vw, 25vh) rotate(157deg); }
+  25% {
+    transform: translate(20vw, 10vh) rotate(467deg); }
+  50% {
+    transform: translate(10vw, 35vh) rotate(399deg); }
+  75% {
+    transform: translate(-10vw, 50vh) rotate(450deg); }
+  100% {
+    transform: translate(20vw, 20vh) rotate(176deg); } }
+@keyframes container3 {
+  0% {
+    transform: translate(40vw, 70vh) rotate(399deg); }
+  30% {
+    transform: translate(50vw, 60vh) rotate(399deg); }
+  55% {
+    transform: translate(20vw, 80vh) rotate(467deg); }
+  80% {
+    transform: translate(30vw, 65vh) rotate(450deg); }
+  100% {
+    transform: translate(10vw, 50vh) rotate(157deg); } }
+@keyframes container4 {
+  0% {
+    transform: translate(-40vw, 90vh) rotate(450deg); }
+  25% {
+    transform: translate(-30vw, 60vh) rotate(467deg); }
+  50% {
+    transform: translate(-20vw, 40vh) rotate(467deg); }
+  75% {
+    transform: translate(-25vw, 30vh) rotate(176deg); }
+  100% {
+    transform: translate(-10vw, 90vh) rotate(399deg); } }
+@keyframes container5 {
+  0% {
+    transform: translate(-20vw, 40vh) rotate(467deg); }
+  25% {
+    transform: translate(-40vw, 50vh) rotate(176deg); }
+  50% {
+    transform: translate(-10vw, 80vh) rotate(450deg); }
+  75% {
+    transform: translate(-30vw, 60vh) rotate(399deg); }
+  100% {
+    transform: translate(-10vw, 10vh) rotate(467deg); } }
+>>>>>>> projectpage
 @keyframes line1 {
   0% {
     transform: translateX(22.5vw); }
@@ -525,7 +659,11 @@ h2 {
   border-radius: 40px;
   background-color: #878788;
   animation-name: line1;
+<<<<<<< HEAD
   animation-duration: 16s;
+=======
+  animation-duration: 13s;
+>>>>>>> projectpage
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -547,7 +685,11 @@ h2 {
   border-radius: 40px;
   background-color: #878788;
   animation-name: line1;
+<<<<<<< HEAD
   animation-duration: 14s;
+=======
+  animation-duration: 15s;
+>>>>>>> projectpage
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
