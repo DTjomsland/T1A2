@@ -441,11 +441,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container1;
-<<<<<<< HEAD
-  animation-duration: 361S;
-=======
-  animation-duration: 348S;
->>>>>>> projectpage
+  animation-duration: 396S;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -454,11 +450,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container2;
-<<<<<<< HEAD
-  animation-duration: 575s;
-=======
-  animation-duration: 467s;
->>>>>>> projectpage
+  animation-duration: 544s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -467,11 +459,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container3;
-<<<<<<< HEAD
-  animation-duration: 247s;
-=======
-  animation-duration: 320s;
->>>>>>> projectpage
+  animation-duration: 392s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -480,11 +468,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container4;
-<<<<<<< HEAD
-  animation-duration: 651s;
-=======
-  animation-duration: 598s;
->>>>>>> projectpage
+  animation-duration: 642s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -493,125 +477,65 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container5;
-<<<<<<< HEAD
-  animation-duration: 105s;
-=======
-  animation-duration: 164s;
->>>>>>> projectpage
+  animation-duration: 140s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
 @keyframes container1 {
   0% {
-<<<<<<< HEAD
-    transform: translate(-30vw, 10vh) rotate(55deg); }
+    transform: translate(-30vw, 10vh) rotate(156deg); }
   20% {
-    transform: translate(20vw, 40vh) rotate(445deg); }
+    transform: translate(20vw, 40vh) rotate(105deg); }
   45% {
-    transform: translate(-20vw, 20vh) rotate(787deg); }
+    transform: translate(-20vw, 20vh) rotate(741deg); }
   70% {
-    transform: translate(-40vw, 40vh) rotate(466deg); }
+    transform: translate(-40vw, 40vh) rotate(204deg); }
   100% {
-    transform: translate(30vw, 10vh) rotate(394deg); } }
+    transform: translate(30vw, 10vh) rotate(316deg); } }
 @keyframes container2 {
   0% {
-    transform: translate(35vw, 25vh) rotate(394deg); }
+    transform: translate(35vw, 25vh) rotate(316deg); }
   25% {
-    transform: translate(20vw, 10vh) rotate(466deg); }
+    transform: translate(20vw, 10vh) rotate(204deg); }
   50% {
-    transform: translate(10vw, 35vh) rotate(787deg); }
+    transform: translate(10vw, 35vh) rotate(741deg); }
   75% {
-    transform: translate(-10vw, 50vh) rotate(445deg); }
+    transform: translate(-10vw, 50vh) rotate(105deg); }
   100% {
-    transform: translate(20vw, 20vh) rotate(55deg); } }
+    transform: translate(20vw, 20vh) rotate(156deg); } }
 @keyframes container3 {
   0% {
-    transform: translate(40vw, 70vh) rotate(787deg); }
+    transform: translate(40vw, 70vh) rotate(741deg); }
   30% {
-    transform: translate(50vw, 60vh) rotate(787deg); }
+    transform: translate(50vw, 60vh) rotate(741deg); }
   55% {
-    transform: translate(20vw, 80vh) rotate(466deg); }
+    transform: translate(20vw, 80vh) rotate(204deg); }
   80% {
-    transform: translate(30vw, 65vh) rotate(445deg); }
+    transform: translate(30vw, 65vh) rotate(105deg); }
   100% {
-    transform: translate(10vw, 50vh) rotate(394deg); } }
+    transform: translate(10vw, 50vh) rotate(316deg); } }
 @keyframes container4 {
   0% {
-    transform: translate(-40vw, 90vh) rotate(445deg); }
+    transform: translate(-40vw, 90vh) rotate(105deg); }
   25% {
-    transform: translate(-30vw, 60vh) rotate(466deg); }
+    transform: translate(-30vw, 60vh) rotate(204deg); }
   50% {
-    transform: translate(-20vw, 40vh) rotate(466deg); }
+    transform: translate(-20vw, 40vh) rotate(204deg); }
   75% {
-    transform: translate(-25vw, 30vh) rotate(55deg); }
+    transform: translate(-25vw, 30vh) rotate(156deg); }
   100% {
-    transform: translate(-10vw, 90vh) rotate(787deg); } }
+    transform: translate(-10vw, 90vh) rotate(741deg); } }
 @keyframes container5 {
   0% {
-    transform: translate(-20vw, 40vh) rotate(466deg); }
+    transform: translate(-20vw, 40vh) rotate(204deg); }
   25% {
-    transform: translate(-40vw, 50vh) rotate(55deg); }
+    transform: translate(-40vw, 50vh) rotate(156deg); }
   50% {
-    transform: translate(-10vw, 80vh) rotate(445deg); }
+    transform: translate(-10vw, 80vh) rotate(105deg); }
   75% {
-    transform: translate(-30vw, 60vh) rotate(787deg); }
+    transform: translate(-30vw, 60vh) rotate(741deg); }
   100% {
-    transform: translate(-10vw, 10vh) rotate(466deg); } }
-=======
-    transform: translate(-30vw, 10vh) rotate(176deg); }
-  20% {
-    transform: translate(20vw, 40vh) rotate(450deg); }
-  45% {
-    transform: translate(-20vw, 20vh) rotate(399deg); }
-  70% {
-    transform: translate(-40vw, 40vh) rotate(467deg); }
-  100% {
-    transform: translate(30vw, 10vh) rotate(157deg); } }
-@keyframes container2 {
-  0% {
-    transform: translate(35vw, 25vh) rotate(157deg); }
-  25% {
-    transform: translate(20vw, 10vh) rotate(467deg); }
-  50% {
-    transform: translate(10vw, 35vh) rotate(399deg); }
-  75% {
-    transform: translate(-10vw, 50vh) rotate(450deg); }
-  100% {
-    transform: translate(20vw, 20vh) rotate(176deg); } }
-@keyframes container3 {
-  0% {
-    transform: translate(40vw, 70vh) rotate(399deg); }
-  30% {
-    transform: translate(50vw, 60vh) rotate(399deg); }
-  55% {
-    transform: translate(20vw, 80vh) rotate(467deg); }
-  80% {
-    transform: translate(30vw, 65vh) rotate(450deg); }
-  100% {
-    transform: translate(10vw, 50vh) rotate(157deg); } }
-@keyframes container4 {
-  0% {
-    transform: translate(-40vw, 90vh) rotate(450deg); }
-  25% {
-    transform: translate(-30vw, 60vh) rotate(467deg); }
-  50% {
-    transform: translate(-20vw, 40vh) rotate(467deg); }
-  75% {
-    transform: translate(-25vw, 30vh) rotate(176deg); }
-  100% {
-    transform: translate(-10vw, 90vh) rotate(399deg); } }
-@keyframes container5 {
-  0% {
-    transform: translate(-20vw, 40vh) rotate(467deg); }
-  25% {
-    transform: translate(-40vw, 50vh) rotate(176deg); }
-  50% {
-    transform: translate(-10vw, 80vh) rotate(450deg); }
-  75% {
-    transform: translate(-30vw, 60vh) rotate(399deg); }
-  100% {
-    transform: translate(-10vw, 10vh) rotate(467deg); } }
->>>>>>> projectpage
+    transform: translate(-10vw, 10vh) rotate(204deg); } }
 @keyframes line1 {
   0% {
     transform: translateX(22.5vw); }
@@ -659,11 +583,7 @@ h2 {
   border-radius: 40px;
   background-color: #878788;
   animation-name: line1;
-<<<<<<< HEAD
-  animation-duration: 16s;
-=======
-  animation-duration: 13s;
->>>>>>> projectpage
+  animation-duration: 17s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -674,7 +594,7 @@ h2 {
   border-radius: 40px;
   background-color: #878788;
   animation-name: line1;
-  animation-duration: 12s;
+  animation-duration: 11s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse; }
 
@@ -685,11 +605,7 @@ h2 {
   border-radius: 40px;
   background-color: #878788;
   animation-name: line1;
-<<<<<<< HEAD
-  animation-duration: 14s;
-=======
-  animation-duration: 15s;
->>>>>>> projectpage
+  animation-duration: 16s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
