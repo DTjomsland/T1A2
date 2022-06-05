@@ -275,7 +275,7 @@ nav {
 .card {
     background-color: #1f1f24;
     width: 85%;
-    border-radius: 2px;
+    border-radius: 5px;
     font-family: quickLight;
     padding: 30px;
     margin: 10px auto;
@@ -364,6 +364,7 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-around;
         width: 100%;
 
 
@@ -396,7 +397,7 @@ nav {
         a {
             display: flex;
             text-decoration: none;
-            width: 60%;
+            width: 80%;
             transition: 0.3s ease;
         }
         a:hover {
@@ -407,8 +408,8 @@ nav {
         }
 
         @media only screen and (min-width: 800px) {
-            .smallcard {
-                width: 50%;
+            a {
+                width: 60%;
             }
         }
         @media only screen and (min-width: 1200px) {
@@ -542,17 +543,18 @@ h2 {
         color:white;
         font-family: quickLight;
         font-size: 20px;
-        margin: 100px 0 50px 0 ;
+        margin: 25% 0 15% 0 ;
+        text-align: center;
     }
     p {
         font-family: quickLight;
         color: white;
         width: 90%;
-        margin-bottom: 25px;
+        margin-bottom: 8%;
     }
     img {
         width: 225px;
-        margin-bottom: 25px;
+        margin-bottom: 8%;
     }
     button {
         font-family: quickLight;
@@ -572,7 +574,7 @@ h2 {
         -webkit-backface-visibility: hidden;
     }
 
-    button:hover {
+    button:hover, button:active {
         outline: 0;
         color: #1f1f24;
         background-color: #BA01AA;
@@ -590,8 +592,17 @@ h2 {
         transform: scale(1.05);
       }
   }
-  
+
+  @media only screen and (max-width: 500px) {
+    .grid {
+        width: 90%;
+    }
+    p {
+        font-size: 15px;
+    }
+    }
 }
+
 
 
 

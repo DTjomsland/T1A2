@@ -179,7 +179,7 @@ nav {
 .card {
   background-color: #1f1f24;
   width: 85%;
-  border-radius: 2px;
+  border-radius: 5px;
   font-family: quickLight;
   padding: 30px;
   margin: 10px auto; }
@@ -246,6 +246,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     width: 100%; }
     .funfacts .spotify h4,
     .funfacts .books h4 {
@@ -274,7 +275,7 @@ nav {
     .funfacts .books a {
       display: flex;
       text-decoration: none;
-      width: 60%;
+      width: 80%;
       transition: 0.3s ease; }
     .funfacts .spotify a:hover,
     .funfacts .books a:hover {
@@ -283,9 +284,9 @@ nav {
       .funfacts .books a:hover img {
         filter: brightness(0) saturate(100%) invert(15%) sepia(97%) saturate(3724%) hue-rotate(295deg) brightness(90%) contrast(114%); }
     @media only screen and (min-width: 800px) {
-      .funfacts .spotify .smallcard,
-      .funfacts .books .smallcard {
-        width: 50%; } }
+      .funfacts .spotify a,
+      .funfacts .books a {
+        width: 60%; } }
     @media only screen and (min-width: 1200px) {
       .funfacts .spotify .spotify, .funfacts .spotify .books,
       .funfacts .books .spotify,
@@ -390,15 +391,16 @@ h2 {
     color: white;
     font-family: quickLight;
     font-size: 20px;
-    margin: 100px 0 50px 0; }
+    margin: 25% 0 15% 0;
+    text-align: center; }
   .projects .overlay p {
     font-family: quickLight;
     color: white;
     width: 90%;
-    margin-bottom: 25px; }
+    margin-bottom: 8%; }
   .projects .overlay img {
     width: 225px;
-    margin-bottom: 25px; }
+    margin-bottom: 8%; }
   .projects .overlay button {
     font-family: quickLight;
     color: #BA01AA;
@@ -415,7 +417,7 @@ h2 {
     cursor: pointer;
     z-index: 3;
     -webkit-backface-visibility: hidden; }
-  .projects .overlay button:hover {
+  .projects .overlay button:hover, .projects .overlay button:active {
     outline: 0;
     color: #1f1f24;
     background-color: #BA01AA;
@@ -425,6 +427,11 @@ h2 {
   transform: scale(1.075); }
 .projects .col:hover .backgroundimg {
   transform: scale(1.05); }
+@media only screen and (max-width: 500px) {
+  .projects .grid {
+    width: 90%; }
+  .projects p {
+    font-size: 15px; } }
 
 .banner {
   overflow: hidden;
@@ -450,7 +457,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container2;
-  animation-duration: 544s;
+  animation-duration: 431s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -459,7 +466,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container3;
-  animation-duration: 392s;
+  animation-duration: 364s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -468,7 +475,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container4;
-  animation-duration: 642s;
+  animation-duration: 686s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -477,65 +484,65 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container5;
-  animation-duration: 140s;
+  animation-duration: 232s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
 @keyframes container1 {
   0% {
-    transform: translate(-30vw, 10vh) rotate(156deg); }
+    transform: translate(-30vw, 10vh) rotate(135deg); }
   20% {
-    transform: translate(20vw, 40vh) rotate(105deg); }
+    transform: translate(20vw, 40vh) rotate(124deg); }
   45% {
-    transform: translate(-20vw, 20vh) rotate(741deg); }
+    transform: translate(-20vw, 20vh) rotate(124deg); }
   70% {
-    transform: translate(-40vw, 40vh) rotate(204deg); }
+    transform: translate(-40vw, 40vh) rotate(438deg); }
   100% {
-    transform: translate(30vw, 10vh) rotate(316deg); } }
+    transform: translate(30vw, 10vh) rotate(126deg); } }
 @keyframes container2 {
   0% {
-    transform: translate(35vw, 25vh) rotate(316deg); }
+    transform: translate(35vw, 25vh) rotate(126deg); }
   25% {
-    transform: translate(20vw, 10vh) rotate(204deg); }
+    transform: translate(20vw, 10vh) rotate(438deg); }
   50% {
-    transform: translate(10vw, 35vh) rotate(741deg); }
+    transform: translate(10vw, 35vh) rotate(124deg); }
   75% {
-    transform: translate(-10vw, 50vh) rotate(105deg); }
+    transform: translate(-10vw, 50vh) rotate(124deg); }
   100% {
-    transform: translate(20vw, 20vh) rotate(156deg); } }
+    transform: translate(20vw, 20vh) rotate(135deg); } }
 @keyframes container3 {
   0% {
-    transform: translate(40vw, 70vh) rotate(741deg); }
+    transform: translate(40vw, 70vh) rotate(124deg); }
   30% {
-    transform: translate(50vw, 60vh) rotate(741deg); }
+    transform: translate(50vw, 60vh) rotate(124deg); }
   55% {
-    transform: translate(20vw, 80vh) rotate(204deg); }
+    transform: translate(20vw, 80vh) rotate(438deg); }
   80% {
-    transform: translate(30vw, 65vh) rotate(105deg); }
+    transform: translate(30vw, 65vh) rotate(124deg); }
   100% {
-    transform: translate(10vw, 50vh) rotate(316deg); } }
+    transform: translate(10vw, 50vh) rotate(126deg); } }
 @keyframes container4 {
   0% {
-    transform: translate(-40vw, 90vh) rotate(105deg); }
+    transform: translate(-40vw, 90vh) rotate(124deg); }
   25% {
-    transform: translate(-30vw, 60vh) rotate(204deg); }
+    transform: translate(-30vw, 60vh) rotate(438deg); }
   50% {
-    transform: translate(-20vw, 40vh) rotate(204deg); }
+    transform: translate(-20vw, 40vh) rotate(438deg); }
   75% {
-    transform: translate(-25vw, 30vh) rotate(156deg); }
+    transform: translate(-25vw, 30vh) rotate(135deg); }
   100% {
-    transform: translate(-10vw, 90vh) rotate(741deg); } }
+    transform: translate(-10vw, 90vh) rotate(124deg); } }
 @keyframes container5 {
   0% {
-    transform: translate(-20vw, 40vh) rotate(204deg); }
+    transform: translate(-20vw, 40vh) rotate(438deg); }
   25% {
-    transform: translate(-40vw, 50vh) rotate(156deg); }
+    transform: translate(-40vw, 50vh) rotate(135deg); }
   50% {
-    transform: translate(-10vw, 80vh) rotate(105deg); }
+    transform: translate(-10vw, 80vh) rotate(124deg); }
   75% {
-    transform: translate(-30vw, 60vh) rotate(741deg); }
+    transform: translate(-30vw, 60vh) rotate(124deg); }
   100% {
-    transform: translate(-10vw, 10vh) rotate(204deg); } }
+    transform: translate(-10vw, 10vh) rotate(438deg); } }
 @keyframes line1 {
   0% {
     transform: translateX(22.5vw); }
@@ -583,7 +590,7 @@ h2 {
   border-radius: 40px;
   background-color: #878788;
   animation-name: line1;
-  animation-duration: 17s;
+  animation-duration: 16s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -605,7 +612,7 @@ h2 {
   border-radius: 40px;
   background-color: #878788;
   animation-name: line1;
-  animation-duration: 16s;
+  animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
