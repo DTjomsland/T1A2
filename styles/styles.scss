@@ -1,91 +1,101 @@
 $neutral1: #949b96;
-$neutral2: #1d1d1d;
+$neutral2: #1f1f24;
 $neutral3: #343a40;
 $neutral4: #343a40;
 $accent1: #694F5D;
+
 // #1f1f24
-// #2f2f37
+// #1f1f24
 @font-face {
     font-family: quickLight;
     src: url(../fonts/Quicksand-Light.ttf);
-  }
+}
 
 @font-face {
     font-family: quickRegular;
     src: url(../fonts/Quicksand-Regular.ttf);
-  }
+}
 
 @font-face {
     font-family: quickMedium;
     src: url(../fonts/Quicksand-Medium.ttf);
-  }
+}
 
 @font-face {
     font-family: quickBold;
     src: url(../fonts/Quicksand-Bold.ttf);
-  }
+}
 
 @font-face {
     font-family: quickSemi;
     src: url(../fonts/Quicksand-SemiBold.ttf);
-  }
+}
 
 * {
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 0;
 }
 
 body {
     background-color: black;
+    padding-bottom: 100px;
 }
 
 
 header {
-    display: flex;   
+    display: flex;
     justify-content: space-between;
     height: 75px;
     padding: 0 5px;
     align-items: center;
-    
+
     .logo {
         height: 75px;
     }
+
     ul {
         display: flex;
         align-items: center;
-        li{
+
+        li {
             list-style: none;
             margin: 0 5px;
             transition: all 0.5s ease 0s;
+
             img {
                 width: 35px;
             }
         }
+
         li:hover {
             transform: translateY(7px) scale(1.2);
         }
-    };
+    }
+
+    ;
 }
 
-nav { 
+nav {
     display: flex;
     width: 100%;
     justify-content: center;
     position: fixed;
-    bottom:0;
+    bottom: 0;
     height: 60px;
     z-index: 100;
+
     ul {
         display: flex;
         justify-content: space-around;
         width: 100%;
-        background-color: #1f1f24f7;
+        background-color: #070707f7;
         align-content: center;
         align-items: center;
 
         li {
             list-style: none;
             transition: all 0.1s ease 0s;
+
             a {
                 display: flex;
                 align-content: center;
@@ -94,30 +104,35 @@ nav {
                 color: rgb(255, 255, 255);
                 font-family: quickLight;
                 font-size: 22px;
-                transition: 0.2s;
+
                 img {
                     height: 16px;
-                    margin-right: 5px; 
+                    margin-right: 5px;
                 }
+
                 .active {
-                    filter:  brightness(0) saturate(100%) invert(5%) sepia(3%) saturate(5674%) hue-rotate(201deg) brightness(95%) contrast(82%);
+                    filter: brightness(0) saturate(100%) invert(5%) sepia(3%) saturate(5674%) hue-rotate(201deg) brightness(95%) contrast(82%);
                 }
-            }
-            a:hover {
-                filter:  brightness(0) saturate(100%) invert(5%) sepia(3%) saturate(5674%) hue-rotate(201deg) brightness(95%) contrast(82%);
             }
 
-        
+            a:hover {
+                filter: brightness(0) saturate(100%) invert(15%) sepia(97%) saturate(3724%) hue-rotate(295deg) brightness(90%) contrast(114%);
+            }
+
+
         }
     }
 }
+
 @media only screen and (max-width: 800px) {
     .displaynone {
-        display:none;
+        display: none;
     }
+
     .navicon {
         height: 25px;
     }
+
     nav a {
         // width: 50px 50px;
     }
@@ -127,23 +142,26 @@ nav {
     z-index: 100;
     display: flex;
     align-items: center;
+
+    h1{
+        font-family:quickLight;
+        color: white;
+        font-size: 60px;
+        span {
+            color:#BA01AA;
+        }
+    }
+
     article {
         margin: auto;
-        display:flex;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         min-height: 90vh;
         width: 95vw;
     }
-    h2 {
-        text-align: center;
-        width: 100%;
-        font-family: quickLight;
-        color: white;
-        font-size: 35px;
-        font-weight: 300;
-    }
+
     p {
         margin-top: 10vh;
         font-family: quickLight;
@@ -153,6 +171,7 @@ nav {
         font-weight: lighter;
         max-width: 700px;
     }
+
     button {
         font-family: quickMedium;
         color: #BA01AA;
@@ -171,240 +190,335 @@ nav {
         cursor: pointer;
         z-index: 100;
     }
-        button:hover {
-            outline: 0;
-            color: $neutral2;
-            background-color: #BA01AA;
-            transform: translateY(-6px);
-            // box-shadow: 0px 2px 4px white;
-          }
-    
+
+    button:hover {
+        outline: 0;
+        color: black;
+        background-color: #BA01AA;
+        transform: translateY(-6px);
+    }
+
+
+
 }
 
+
+// Styling for about me text/img section
 .aboutme {
-    article{
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-top: 50px;
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-top: 100px;
+
         .aboutimg {
-        width: 350px;
-        border-radius: 50%;
+            width: 400px;
+            border-radius: 50%;
         }
+
         h1 {
-        margin-top: 40px;
+            margin-top: 100px;
+            font-family: quickLight;
+            font-size: 60px;
+            color: white;
+            text-align: center;
+            font-weight: lighter;
+            span {
+                color:#BA01AA;
+            }
+        }
+
+        p {
+            margin-top: 20px;
+            font-family: quickLight;
+            font-size: 16px;
+            color: white;
+            padding: 25px 25px 50px 25px;
+        }
+        @media only screen and (min-width: 1200px) {
+    h1 {
+        margin-top: 50px;
+    }
+   
+    p {
+        width: 60%;
+    }
+}
+    }
+
+}
+
+
+
+// Styling for job experience section about me page
+.experience {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.background {
+    display: flex;
+    flex-direction: column;
+    align-items: center stretch;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.titlestyle {
+    width: 100%;
+
+}
+
+.card {
+    background-color: #1f1f24;
+    width: 85%;
+    border-radius: 2px;
+    font-family: quickLight;
+    padding: 30px;
+    margin: 10px auto;
+
+    .cardtitle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h3 {
+            font-size: 25px;
+            color:#BA01AA;
+        }
+    }
+
+    p {
+        margin-top: 25px;
+        font-size: 16px;
+        color: white;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+    }
+
+    button {
+        width: 100%;
         font-family: quickLight;
-        font-size: 35px;
+        color: #BA01AA;
+        font-weight: bolder;
+        font-size: 18px;
+        background-color: transparent;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: #BA01AA;
+        width: 100px;
+        height: 30px;
+        margin-top: 20px;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        z-index: 3;
+        -webkit-backface-visibility: hidden;
+    }
+
+    button:hover {
+        outline: 0;
+        color: #1f1f24;
+        background-color: #BA01AA;
+        transform: translateY(-6px);
+    }
+
+}
+.arrow {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #32557f;
+    border-left: 0;
+    border-top: 0;
+  }
+@media only screen and (min-width: 800px) {
+    .card {
+        width: 55%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .background {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 90%;
+    }
+
+    .card {
+        width: 27%;
+    }
+
+}
+
+// styling for fun facts sections on about me page
+.funfacts {
+    display: flex;
+    flex-direction: column;
+    .spotify,
+    .books {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+
+        h4 {
+            font-family: quickLight;
+            font-size: 18px;
+            color:#BA01AA;
+            padding:0 0 10px 0;
+            -webkit-transform: translate3D(0, 0, 0);
+        }
+
+        .smallcard {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            margin: 10px 0;
+            background-color: #1f1f24;
+            border-radius: 5px;
+            align-items: center;
+            width: 100%;
+            -webkit-transform: translate3D(0, 0, 0);
+        }
+
+        p {
+            color: #b0b2b3;
+            font-size: 14px;
+            font-family: quickLight;
+        }
+
+        a {
+            display: flex;
+            text-decoration: none;
+            width: 60%;
+            transition: 0.3s ease;
+        }
+        a:hover {
+            transform: scale(1.1);
+            img {
+            filter: brightness(0) saturate(100%) invert(15%) sepia(97%) saturate(3724%) hue-rotate(295deg) brightness(90%) contrast(114%);
+            }
+        }
+
+        @media only screen and (min-width: 800px) {
+            .smallcard {
+                width: 50%;
+            }
+        }
+        @media only screen and (min-width: 1200px) {
+            .spotify, .books {
+                width: 50%;
+            }
+            h2 {
+                width: 80%;
+            }
+            a{
+                width:60%;
+            }
+            .smallcard {
+                width: 100%;
+                height: 60px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .funfacts {
+        flex-direction: row-reverse;
+    }
+}
+
+// Styling for border lines/h2s on about me page
+h2 {
+    position: relative;
+    display: inline-block;
+    width: 95%;
+    font-family: quickLight;
+    font-size: 40px;
+    color:white;
+    padding: 50px 0;
+    margin-left: 20px;
+    margin-right: 0;
+}
+.line {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+
+    &:after {
+        content: '';
+        flex-grow: 1;
+        height: 1px;
+        background:white;
+        min-width: 20px;
+        margin:auto;
+        padding-left: 15px;
+    }
+
+    &:after {
+        margin-left: 10px;
+    }
+}
+
+.line2 {
+    display: flex;
+    align-items: flex-start;
+    margin-right: 20px;
+
+    &:before {
+        content: '';
+        flex-grow: 1;
+        height: 1px;
+        background: white;
+        min-width: 20px;
+        margin: auto;
+    }
+
+    &:before {
+        margin-right: 15px;
+    }
+}
+
+.projects {
+    h1 {
+        margin-top: 100px;
+        font-family: quickLight;
+        font-size: 60px;
         color: white;
         text-align: center;
         font-weight: lighter;
-        }
-        p {
-        margin-top: 20px;
-        font-family: quickLight;
-        font-size: 16px;
-        color: white;
-        padding: 25px 25px 50px 25px;
+        span {
+            color:#BA01AA;
         }
     }
-}
-
-.experience {
+.grid {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 30px;
-}
-    .titlestyle {
-        width: 100%;
-
-    }
-    h2 {
-        position:relative;
-        display:inline-block;
-        width: 100%;
-        font-family: quickLight;
-        font-size: 35px;
-        color: white;
-        padding: 25px 0;
-        margin-left: 20px;
-    }
-
-    .line {
-        display: flex;
-        align-items: flex-start;
-        text-align: left;
-      
-        &:after {
-          content: '';
-          flex-grow: 1;
-          height: 1px;
-          background: white;
-          min-width: 20px;
-          margin: auto;
-        }
-      
-        &:after {
-          margin-left: 10px;
-        }
-      }
-
-    .card {
-        background-color: #2A2A2A;
-        width: 85vw;
-        color: white;
-        border-radius: 5px;
-        font-family: quickRegular;
-        padding: 15px 15px;
-        margin: 10px 0;
-        .cardtitle{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            h3 {
-                font-size: 21px;
-            }
-        }
-        p {
-            margin-top: 25px;
-            font-size: 16px;
-        }
-        form{
-            display:flex;
-            justify-content: center;
-        }
-        button {
-            width: 100%;
-            font-family: quickLight;
-            color:  #BA01AA;
-            font-weight: bolder;
-            font-size: 18px;
-            background-color: transparent;
-            border-radius: 10px;
-            border-style: solid;
-            border-color: #BA01AA;
-            width: 100px;
-            height: 30px;
-            margin-top: 20px;
-            transition: all 0.3s ease 0s;
-            cursor: pointer;
-            z-index: 3;
-        }
-        button:hover {
-            outline: 0;
-            color: #BA01AA;
-            background-color: white;
-             transform: translateY(-6px);
-             // box-shadow: 0px 2px 4px white;
-        }
-    
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    margin: 100px auto;
+  }
+  .col {
+    margin: 16px 16px 8px 16px;
+  }
+  img {
+      border-radius: 10px;
+      transition: 0.3s ease ;
+  }
+  img:hover{
+      transform: scale(1.05);
+  }
 }
 
-.spotify {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    
-    h2 {
-        font-family: quickLight;
-        font-size: 35px;
-        color: white;
-        padding: 25px 0;
-    }
-    .line2{
-        display: flex;
-        align-items: flex-start;
-        margin-right: 40px;
-        &:before {
-          content: '';
-          flex-grow: 1;
-          height: 1px;
-          background: white;
-          min-width: 20px;
-          margin:auto;
-        }
-        &:before {
-          margin-right: 15px;
-        }
-      }
-   
-    h4 {
-        font-family: quickLight;
-        font-size: 18px;
-        color:white;
-        padding:5px 0 7px 0;
-    }
-    .smallcard {
-        display: flex;
-        justify-content: space-between;
-        width: 85vw;
-        padding: 15px 15px;
-        margin: 10px 0;
-        background-color: #2A2A2A;
-        border-radius: 5px;
-    }
-    p{
-        color:#BA01AA;
-        font-size: 14px;
-        font-family: quickLight;
-    }
-    
 
-}
 
-.books {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    padding: 40px 0 60px 0;
-    h2 {
-        font-family: quickLight;
-        font-size: 30px;
-        color: white;
-        padding: 25px 0 15px 0;
-    }
-    .line {
-        display: flex;
-        align-items: flex-start;
-        text-align: left;
-      
-        &:after {
-          content: '';
-          flex-grow: 1;
-          height: 1px;
-          background: white;
-          min-width: 20px;
-          margin: auto;
-        }
-      
-        &:after {
-          margin-left: 10px;
-        }
-    }
-    h4 {
-        font-family: quickLight;
-        font-size: 18px;
-        color:white;
-        padding:5px 0;
-    }
-    .smallcard {
-        display: flex;
-        justify-content: space-between;
-        width: 85vw;
-        
-        padding: 15px 15px;
-        margin: 10px 0;
-        background-color: #2A2A2A;
-        border-radius: 5px;
-        align-items: center;
-    }
-    p{
-        color:#BA01AA;
-        font-size: 14px;
-        font-family: quickLight;
-    }
-}
+
 
 
 
@@ -426,7 +540,7 @@ $start1: random(500);
 $start2: random(500);
 $start3: random(10)+5;
 $start4: random(10)+5;
-$start5:random(10)+5 ;
+$start5:random(10)+5;
 $rotation: random(360);
 $duration1: random(200)+300;
 $duration2: random(200)+400;
@@ -436,15 +550,15 @@ $duration5: random(200)+100;
 
 
 
-.banner{
+.banner {
     overflow: hidden;
     position: absolute;
     top: 0;
     width: 100%;
-    height:100%;
+    height: 100%;
     z-index: -1;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -457,109 +571,194 @@ $duration5: random(200)+100;
     align-items: center;
     animation-name: container1;
     animation-duration: $duration1+S;
-    animation-iteration-count:infinite;
+    animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
 .container2 {
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
     animation-name: container2;
     animation-duration: $duration2+s;
-    animation-iteration-count:infinite;
+    animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
 .container3 {
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
     animation-name: container3;
     animation-duration: $duration3+s;
-    animation-iteration-count:infinite;
+    animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
 .container4 {
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
     animation-name: container4;
     animation-duration: $duration4+s;
-    animation-iteration-count:infinite;
+    animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
 .container5 {
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
     animation-name: container5;
     animation-duration: $duration5+s;
-    animation-iteration-count:infinite;
+    animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
 @keyframes container1 {
-     0%  {transform: translate(-30vw, 10vh) rotate($rot1+deg)}
-    20% {transform: translate(20vw, 40vh) rotate($rot2+deg)}
-    45% {transform: translate(-20vw, 20vh) rotate($rot3+deg)}
-    70% {transform: translate(-40vw,40vh) rotate($rot4+deg)}
-    100% {transform: translate(30vw, 10vh) rotate($rot5+deg)}
+    0% {
+        transform: translate(-30vw, 10vh) rotate($rot1+deg)
+    }
+
+    20% {
+        transform: translate(20vw, 40vh) rotate($rot2+deg)
+    }
+
+    45% {
+        transform: translate(-20vw, 20vh) rotate($rot3+deg)
+    }
+
+    70% {
+        transform: translate(-40vw, 40vh) rotate($rot4+deg)
+    }
+
+    100% {
+        transform: translate(30vw, 10vh) rotate($rot5+deg)
+    }
 }
 
 @keyframes container2 {
-    0%   {transform: translate(35vw, 25vh) rotate($rot5+deg);}
-    25%  {transform: translate(20vw, 10vh) rotate($rot4+deg);}
-    50%  {transform: translate(10vw, 35vh) rotate($rot3+deg);}
-    75%  {transform: translate(-10vw, 50vh) rotate($rot2+deg);}
-    100% {transform: translate(20vw, 20vh)rotate($rot1+deg);}
+    0% {
+        transform: translate(35vw, 25vh) rotate($rot5+deg);
+    }
+
+    25% {
+        transform: translate(20vw, 10vh) rotate($rot4+deg);
+    }
+
+    50% {
+        transform: translate(10vw, 35vh) rotate($rot3+deg);
+    }
+
+    75% {
+        transform: translate(-10vw, 50vh) rotate($rot2+deg);
+    }
+
+    100% {
+        transform: translate(20vw, 20vh)rotate($rot1+deg);
+    }
 }
 
 @keyframes container3 {
-    0%   {transform: translate(40vw,70vh) rotate($rot3+deg);}
-    30%  {transform: translate(50vw,60vh) rotate($rot3+deg);}
-    55%  {transform: translate(20vw,80vh) rotate($rot4+deg);}
-    80%  {transform: translate(30vw,65vh) rotate($rot2+deg);}
-    100% {transform: translate(10vw,50vh) rotate($rot5+deg);}
+    0% {
+        transform: translate(40vw, 70vh) rotate($rot3+deg);
+    }
+
+    30% {
+        transform: translate(50vw, 60vh) rotate($rot3+deg);
+    }
+
+    55% {
+        transform: translate(20vw, 80vh) rotate($rot4+deg);
+    }
+
+    80% {
+        transform: translate(30vw, 65vh) rotate($rot2+deg);
+    }
+
+    100% {
+        transform: translate(10vw, 50vh) rotate($rot5+deg);
+    }
 }
 
 @keyframes container4 {
-    0%   {transform: translate(-40vw,90vh) rotate($rot2+deg);}
-    25%  {transform: translate(-30vw,60vh) rotate($rot4+deg);}
-    50%  {transform: translate(-20vw,40vh) rotate($rot4+deg);}
-    75%  {transform: translate(-25vw,30vh) rotate($rot1+deg);}
-    100% {transform: translate(-10vw,90vh) rotate($rot3+deg);}
+    0% {
+        transform: translate(-40vw, 90vh) rotate($rot2+deg);
+    }
+
+    25% {
+        transform: translate(-30vw, 60vh) rotate($rot4+deg);
+    }
+
+    50% {
+        transform: translate(-20vw, 40vh) rotate($rot4+deg);
+    }
+
+    75% {
+        transform: translate(-25vw, 30vh) rotate($rot1+deg);
+    }
+
+    100% {
+        transform: translate(-10vw, 90vh) rotate($rot3+deg);
+    }
 }
 
 @keyframes container5 {
-    0%   {transform: translate(-20vw,40vh) rotate($rot4+deg);}
-    25%  {transform: translate(-40vw,50vh) rotate($rot1+deg);}
-    50%  {transform: translate(-10vw,80vh) rotate($rot2+deg);}
-    75%  {transform: translate(-30vw,60vh) rotate($rot3+deg);}
-    100% {transform: translate(-10vw,10vh) rotate($rot4+deg);}
+    0% {
+        transform: translate(-20vw, 40vh) rotate($rot4+deg);
+    }
+
+    25% {
+        transform: translate(-40vw, 50vh) rotate($rot1+deg);
+    }
+
+    50% {
+        transform: translate(-10vw, 80vh) rotate($rot2+deg);
+    }
+
+    75% {
+        transform: translate(-30vw, 60vh) rotate($rot3+deg);
+    }
+
+    100% {
+        transform: translate(-10vw, 10vh) rotate($rot4+deg);
+    }
 }
 
 
 @keyframes line1 {
-    0%   {transform: translateX(22.5vw);}
-    100% {transform: translateX(-22.5vw);}
+    0% {
+        transform: translateX(22.5vw);
+    }
+
+    100% {
+        transform: translateX(-22.5vw);
+    }
 }
 
 
-@keyframes ball1{
-    0%   {transform: scale(1,1);}
-    100% {transform: scale(1.8,1.8);}
+@keyframes ball1 {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    100% {
+        transform: scale(1.8, 1.8);
+    }
 }
 
-@keyframes ball2{
-    0%   {transform: scale(1,1) }
-    100% {transform: scale(1.8,1.8);}
+@keyframes ball2 {
+    0% {
+        transform: scale(1, 1)
+    }
+
+    100% {
+        transform: scale(1.8, 1.8);
+    }
 }
 
 .bigline {
@@ -575,7 +774,7 @@ $duration5: random(200)+100;
     border-radius: 50%;
     animation-name: ball1;
     animation-duration: 5s;
-    animation-iteration-count:infinite;
+    animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
@@ -586,7 +785,7 @@ $duration5: random(200)+100;
     border-radius: 50%;
     animation-name: ball2;
     animation-duration: 5s;
-    animation-iteration-count:infinite;
+    animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
 }
 
@@ -598,7 +797,7 @@ $duration5: random(200)+100;
     background-color: #878788;
     animation-name: line1;
     animation-duration: $line1+s;
-    animation-iteration-count:infinite;
+    animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
@@ -610,7 +809,7 @@ $duration5: random(200)+100;
     background-color: #878788;
     animation-name: line1;
     animation-duration: $line2+s;
-    animation-iteration-count:infinite;
+    animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
 }
 
@@ -625,4 +824,3 @@ $duration5: random(200)+100;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-
