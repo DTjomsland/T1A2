@@ -46,7 +46,9 @@ body {
     height: 100%;
 }
 
-
+.contentheader {
+    background-color: rgba(0, 0, 0, 0.897);
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -57,9 +59,17 @@ header {
     width: 99%;
     top:0;
     z-index: 100;
-
+    .name{
+        display: flex;
+        align-items: center;
     .logo {
         height: 75px;
+    }
+    p {
+        color:white;
+        font-size: 25px;
+        font-family: quickLight;
+    }
     }
 
     ul {
@@ -605,15 +615,15 @@ h1 {
   }
   .col {
     margin: 25px 25px 20px 25px;
-  }
-  img {
-      border-radius: 10px;
-      transition: 0.3s ease ;
-  }
-
-  .col {
     position: relative;
   }
+  
+
+
+  img {
+    border-radius: 10px;
+    transition: 0.3s ease ;
+}
   
   .backgroundimg {
     display: block;
@@ -701,6 +711,170 @@ h1 {
     }
 }
 
+.blog {
+        margin-top: 100vh;
+        background-color: black;
+        padding-bottom: 100px;
+        padding-top: 50px;
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 70%;
+            margin: 0 auto;
+          }
+          .col {
+            margin: 25px 25px 20px 25px;
+            position: relative;
+          }
+          
+        article {
+            margin-top: 40px;
+            text-decoration: none;
+            width: 30vw;
+            a {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+            img {
+                border-radius: 5px;
+            }
+            h2{
+                color: #BA01AA;
+                font-size: 25px;
+                padding:10px 0;
+                margin: 0;
+                font-family: quickLight;
+            }
+            p  {
+                color: white;
+                font-family: quickLight;
+                font-size: 16px;
+                text-decoration: none;
+                margin-top: 5px;
+            }
+            .date {
+                font-size: 13px;
+            }
+            a {
+                text-decoration: none;
+            }
+            a:hover {
+                img {
+                    transform: scale(1.01);
+                }
+                h2 {
+                    text-decoration: underline;
+                }
+            }
+        }
+        @media only screen and (max-width: 1160px) {
+            article {
+                width: 65vw;
+            }
+            }
+            @media only screen and (max-width: 600px) {
+                article {
+                    width: 90vw;
+                }
+                }
+                @media only screen and (min-width: 1160px) {
+                    .col:first-of-type {
+                        width: 40vw;
+                        article {
+                            width:100%
+                        }
+                    }
+                    }
+      }
+    
+.blogbody {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20vh;
+   
+
+    article {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: auto;
+    padding: 0 15px;
+    margin-bottom: 150px;
+    
+        h1 {
+            font-family: quickRegular;
+            font-size: 35px;
+            color:#BA01AA;
+            font-weight: lighter;
+            margin-bottom: 15px;
+        }
+        h3 {
+            font-size: 18px;
+            margin-right: 0;
+            color: white;
+            font-family: quickLight;
+            margin-bottom: 10px;
+        }
+        .date {
+            color: white;
+            font-family: quickLight;
+            font-size: 12px;
+            margin-bottom: 25px;
+        }
+        .author  {
+            color: white;
+            font-family: quickLight;
+            margin-bottom: 30px;
+            span {
+                color:#BA01AA
+            }
+        }
+        hr {
+            margin-bottom: 30px;
+        }
+        img {
+            margin-bottom: 40px;
+            border-radius: 5px;
+        }
+        p {
+            color: white;
+            font-family: quickLight;
+            margin-bottom: 30px;
+        }
+        button {
+            font-family: quickLight;
+            align-self: center;
+            color: #BA01AA;
+            font-weight: bolder;
+            font-size: 18px;
+            background-color: transparent;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: #BA01AA;
+            width: 150px;
+            height: 30px;
+            margin-top: 20px;
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+            z-index: 3;
+            -webkit-backface-visibility: hidden;
+        }
+        button:hover, button:active {
+            outline: 0;
+            color: #1f1f24;
+            background-color: #BA01AA;
+            transform: translateY(-6px);
+        }
+            }
+            @media only screen and (min-width: 800px) {
+                article {
+                    width: 40%;
+                }
+                }
+    }
+  
 
 
 
