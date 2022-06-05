@@ -577,7 +577,19 @@ h1 {
         transform: rotate(45deg) translate(10px, 10px);
     }
 }
+
 }
+@media only screen and (max-width: 600px) {
+    .hero {
+        margin-top: 30vh;
+    }
+    }
+
+
+
+
+
+
 .projects {
     margin-top: 100vh;
     background-color: black;
