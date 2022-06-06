@@ -137,26 +137,31 @@ nav {
     padding: 0 20px;
     font-weight: lighter;
     max-width: 700px; }
-  .landing button {
-    font-family: quickMedium;
+  .landing .button {
+    display: flex;
+    font-family: quickLight;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
     color: #BA01AA;
-    font-size: 20px;
     font-weight: bolder;
+    font-size: 25px;
     background-color: transparent;
-    border-color: #694F5D;
     border-radius: 10px;
     border-style: solid;
     border-color: #BA01AA;
-    border-width: 3px;
-    width: 125px;
-    height: 50px;
-    margin-top: 110px;
+    width: 150px;
+    height: 35px;
+    margin-top: 100px;
     transition: all 0.3s ease 0s;
     cursor: pointer;
-    z-index: 100; }
-  .landing button:hover {
+    z-index: 3;
+    -webkit-backface-visibility: hidden;
+    text-align: center;
+    text-decoration: none; }
+  .landing .button:hover, .landing button:active {
     outline: 0;
-    color: black;
+    color: #1f1f24;
     background-color: #BA01AA;
     transform: translateY(-6px); }
   @media only screen and (max-width: 600px) {
@@ -215,6 +220,8 @@ nav {
   width: 100%; }
 
 .card {
+  display: flex;
+  flex-direction: column;
   background-color: #1f1f24;
   width: 85%;
   border-radius: 5px;
@@ -235,9 +242,12 @@ nav {
   .card form {
     display: flex;
     justify-content: center; }
-  .card button {
-    width: 100%;
+  .card .button {
+    display: flex;
     font-family: quickLight;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
     color: #BA01AA;
     font-weight: bolder;
     font-size: 18px;
@@ -245,14 +255,16 @@ nav {
     border-radius: 10px;
     border-style: solid;
     border-color: #BA01AA;
-    width: 100px;
+    width: 125px;
     height: 30px;
-    margin-top: 20px;
+    margin-top: 40px;
     transition: all 0.3s ease 0s;
     cursor: pointer;
     z-index: 3;
-    -webkit-backface-visibility: hidden; }
-  .card button:hover {
+    -webkit-backface-visibility: hidden;
+    text-align: center;
+    text-decoration: none; }
+  .card .button:hover, .card button:active {
     outline: 0;
     color: #1f1f24;
     background-color: #BA01AA;
@@ -478,8 +490,12 @@ h2 {
     .projects .overlay img {
       width: 225px;
       margin-bottom: 8%; }
-    .projects .overlay button {
+    .projects .overlay .button {
+      display: flex;
       font-family: quickLight;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
       color: #BA01AA;
       font-weight: bolder;
       font-size: 18px;
@@ -493,8 +509,10 @@ h2 {
       transition: all 0.3s ease 0s;
       cursor: pointer;
       z-index: 3;
-      -webkit-backface-visibility: hidden; }
-    .projects .overlay button:hover, .projects .overlay button:active {
+      -webkit-backface-visibility: hidden;
+      text-align: center;
+      text-decoration: none; }
+    .projects .overlay .button:hover, .projects .overlay button:active {
       outline: 0;
       color: #1f1f24;
       background-color: #BA01AA;
@@ -609,8 +627,11 @@ h2 {
       color: white;
       font-family: quickLight;
       margin-bottom: 30px; }
-    .blogbody article button {
+    .blogbody article .button {
+      display: flex;
       font-family: quickLight;
+      align-items: center;
+      justify-content: center;
       align-self: center;
       color: #BA01AA;
       font-weight: bolder;
@@ -625,8 +646,10 @@ h2 {
       transition: all 0.3s ease 0s;
       cursor: pointer;
       z-index: 3;
-      -webkit-backface-visibility: hidden; }
-    .blogbody article button:hover, .blogbody article button:active {
+      -webkit-backface-visibility: hidden;
+      text-align: center;
+      text-decoration: none; }
+    .blogbody article .button:hover, .blogbody article button:active {
       outline: 0;
       color: #1f1f24;
       background-color: #BA01AA;
@@ -650,7 +673,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container1;
-  animation-duration: 407S;
+  animation-duration: 463S;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -659,7 +682,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container2;
-  animation-duration: 421s;
+  animation-duration: 569s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -668,7 +691,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container3;
-  animation-duration: 325s;
+  animation-duration: 263s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -677,7 +700,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container4;
-  animation-duration: 662s;
+  animation-duration: 695s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -686,65 +709,65 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container5;
-  animation-duration: 241s;
+  animation-duration: 113s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
 @keyframes container1 {
   0% {
-    transform: translate(-30vw, 10vh) rotate(29deg); }
+    transform: translate(-30vw, 10vh) rotate(148deg); }
   20% {
-    transform: translate(20vw, 40vh) rotate(470deg); }
+    transform: translate(20vw, 40vh) rotate(215deg); }
   45% {
-    transform: translate(-20vw, 20vh) rotate(106deg); }
+    transform: translate(-20vw, 20vh) rotate(518deg); }
   70% {
-    transform: translate(-40vw, 40vh) rotate(248deg); }
+    transform: translate(-40vw, 40vh) rotate(42deg); }
   100% {
-    transform: translate(30vw, 10vh) rotate(164deg); } }
+    transform: translate(30vw, 10vh) rotate(378deg); } }
 @keyframes container2 {
   0% {
-    transform: translate(35vw, 25vh) rotate(164deg); }
+    transform: translate(35vw, 25vh) rotate(378deg); }
   25% {
-    transform: translate(20vw, 10vh) rotate(248deg); }
+    transform: translate(20vw, 10vh) rotate(42deg); }
   50% {
-    transform: translate(10vw, 35vh) rotate(106deg); }
+    transform: translate(10vw, 35vh) rotate(518deg); }
   75% {
-    transform: translate(-10vw, 50vh) rotate(470deg); }
+    transform: translate(-10vw, 50vh) rotate(215deg); }
   100% {
-    transform: translate(20vw, 20vh) rotate(29deg); } }
+    transform: translate(20vw, 20vh) rotate(148deg); } }
 @keyframes container3 {
   0% {
-    transform: translate(40vw, 70vh) rotate(106deg); }
+    transform: translate(40vw, 70vh) rotate(518deg); }
   30% {
-    transform: translate(50vw, 60vh) rotate(106deg); }
+    transform: translate(50vw, 60vh) rotate(518deg); }
   55% {
-    transform: translate(20vw, 80vh) rotate(248deg); }
+    transform: translate(20vw, 80vh) rotate(42deg); }
   80% {
-    transform: translate(30vw, 65vh) rotate(470deg); }
+    transform: translate(30vw, 65vh) rotate(215deg); }
   100% {
-    transform: translate(10vw, 50vh) rotate(164deg); } }
+    transform: translate(10vw, 50vh) rotate(378deg); } }
 @keyframes container4 {
   0% {
-    transform: translate(-40vw, 90vh) rotate(470deg); }
+    transform: translate(-40vw, 90vh) rotate(215deg); }
   25% {
-    transform: translate(-30vw, 60vh) rotate(248deg); }
+    transform: translate(-30vw, 60vh) rotate(42deg); }
   50% {
-    transform: translate(-20vw, 40vh) rotate(248deg); }
+    transform: translate(-20vw, 40vh) rotate(42deg); }
   75% {
-    transform: translate(-25vw, 30vh) rotate(29deg); }
+    transform: translate(-25vw, 30vh) rotate(148deg); }
   100% {
-    transform: translate(-10vw, 90vh) rotate(106deg); } }
+    transform: translate(-10vw, 90vh) rotate(518deg); } }
 @keyframes container5 {
   0% {
-    transform: translate(-20vw, 40vh) rotate(248deg); }
+    transform: translate(-20vw, 40vh) rotate(42deg); }
   25% {
-    transform: translate(-40vw, 50vh) rotate(29deg); }
+    transform: translate(-40vw, 50vh) rotate(148deg); }
   50% {
-    transform: translate(-10vw, 80vh) rotate(470deg); }
+    transform: translate(-10vw, 80vh) rotate(215deg); }
   75% {
-    transform: translate(-30vw, 60vh) rotate(106deg); }
+    transform: translate(-30vw, 60vh) rotate(518deg); }
   100% {
-    transform: translate(-10vw, 10vh) rotate(248deg); } }
+    transform: translate(-10vw, 10vh) rotate(42deg); } }
 @keyframes line1 {
   0% {
     transform: translateX(22.5vw); }
@@ -792,7 +815,7 @@ h2 {
   border-radius: 40px;
   background-color: #878788;
   animation-name: line1;
-  animation-duration: 17s;
+  animation-duration: 13s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -803,7 +826,7 @@ h2 {
   border-radius: 40px;
   background-color: #878788;
   animation-name: line1;
-  animation-duration: 18s;
+  animation-duration: 14s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse; }
 
@@ -814,7 +837,7 @@ h2 {
   border-radius: 40px;
   background-color: #878788;
   animation-name: line1;
-  animation-duration: 18s;
+  animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
