@@ -174,14 +174,14 @@ nav {
     flex-direction: column;
     align-items: center;
     align-content: center;
-    height: 100vh;
+    height: 100%;
     
 
     h1{
         font-family:quickLight;
         color: white;
         font-size: 60px;
-        margin-top: 90px;
+        margin-top: 300px;
         span {
             color:#BA01AA;
         }
@@ -239,9 +239,17 @@ nav {
         transform: translateY(-6px);
     }
     @media only screen and (max-width: 600px) {
+        h1 {
+            font-size: 35px;
+            margin-top: 150px;
+        }
         p {
             font-size: 20px;
             text-align: center;
+            margin-top: 70px;
+        }
+        .button {
+            margin-top: 70px;
         }
     }
 
@@ -602,10 +610,12 @@ h1 {
 @media only screen and (max-width: 600px) {
     .hero {
         margin-top: 30vh;
+        .arrow {
+            margin-top: 10vh;
+        }
+    
     }
-    }
-
-
+}
 
 
 
