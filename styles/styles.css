@@ -115,12 +115,11 @@ nav {
   flex-direction: column;
   align-items: center;
   align-content: center;
-  height: 100%; }
+  height: 100vh; }
   .landing h1 {
     font-family: quickLight;
     color: white;
     font-size: 60px;
-    margin-top: 300px;
     text-align: center; }
     .landing h1 span {
       color: #BA01AA; }
@@ -148,11 +147,12 @@ nav {
     align-self: center;
     color: #BA01AA;
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 20px;
     background-color: transparent;
     border-radius: 10px;
     border-style: solid;
     border-color: #BA01AA;
+    border-width: 2px;
     width: 150px;
     height: 35px;
     margin-top: 100px;
@@ -164,13 +164,12 @@ nav {
     text-decoration: none; }
   .landing .button:hover, .landing button:active {
     outline: 0;
-    color: #1f1f24;
+    color: black;
     background-color: #BA01AA;
     transform: translateY(-6px); }
   @media only screen and (max-width: 600px) {
     .landing h1 {
-      font-size: 35px;
-      margin-top: 150px; }
+      font-size: 35px; }
     .landing p {
       font-size: 20px;
       text-align: center;
@@ -188,7 +187,7 @@ nav {
     flex-wrap: wrap;
     padding-top: 100px; }
     .aboutme article .aboutimg {
-      width: 400px;
+      width: 350px;
       border-radius: 50%; }
     .aboutme article h1 {
       margin-top: 100px;
@@ -235,8 +234,9 @@ nav {
   width: 85%;
   border-radius: 5px;
   font-family: quickLight;
-  padding: 30px;
-  margin: 10px auto; }
+  padding: 25px;
+  margin: 20px auto;
+  max-width: 450px; }
   .card .cardtitle {
     display: flex;
     align-items: center;
@@ -248,40 +248,40 @@ nav {
     margin-top: 25px;
     font-size: 16px;
     color: white; }
-  .card form {
-    display: flex;
-    justify-content: center; }
-  .card .button {
-    display: flex;
-    font-family: quickLight;
-    align-items: center;
-    justify-content: center;
-    align-self: center;
-    color: #BA01AA;
-    font-weight: bolder;
-    font-size: 18px;
-    background-color: transparent;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: #BA01AA;
-    width: 125px;
-    height: 30px;
-    margin-top: 40px;
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    z-index: 3;
-    -webkit-backface-visibility: hidden;
-    text-align: center;
-    text-decoration: none; }
-  .card .button:hover, .card button:active {
-    outline: 0;
-    color: #1f1f24;
-    background-color: #BA01AA;
-    transform: translateY(-6px); }
+
+.button {
+  display: flex;
+  font-family: quickLight;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  color: #BA01AA;
+  font-weight: bolder;
+  font-size: 18px;
+  background-color: transparent;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #BA01AA;
+  border-width: 2px;
+  width: 150px;
+  height: 30px;
+  margin-top: 40px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  z-index: 3;
+  -webkit-backface-visibility: hidden;
+  text-align: center;
+  text-decoration: none; }
+
+.button:hover, button:active {
+  outline: 0;
+  color: black;
+  background-color: #BA01AA;
+  transform: translateY(-6px); }
 
 @media only screen and (min-width: 800px) {
   .card {
-    width: 55%; } }
+    width: 450px; } }
 @media only screen and (min-width: 1200px) {
   .background {
     flex-direction: row;
@@ -289,7 +289,8 @@ nav {
     width: 90%; }
 
   .card {
-    width: 27%; } }
+    width: 27%;
+    max-width: 450px; } }
 .funfacts {
   display: flex;
   flex-direction: column;
@@ -514,6 +515,7 @@ h2 {
       border-radius: 10px;
       border-style: solid;
       border-color: #BA01AA;
+      border-width: 2px;
       width: 150px;
       height: 30px;
       margin-top: 20px;
@@ -525,7 +527,7 @@ h2 {
       text-decoration: none; }
     .projects .overlay .button:hover, .projects .overlay button:active {
       outline: 0;
-      color: #1f1f24;
+      color: black;
       background-color: #BA01AA;
       transform: translateY(-6px); }
   .projects .col:hover .overlay {
@@ -655,6 +657,7 @@ h2 {
       border-radius: 10px;
       border-style: solid;
       border-color: #BA01AA;
+      border-width: 2px;
       width: 150px;
       height: 30px;
       margin-top: 20px;
@@ -673,6 +676,144 @@ h2 {
     .blogbody article {
       width: 40%; } }
 
+.contact {
+  margin-top: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  background-color: black;
+  height: 900px;
+  padding-bottom: 300px; }
+  .contact h3 {
+    font-family: quickLight;
+    color: white;
+    font-size: 35px;
+    color: white;
+    margin-bottom: 30px;
+    text-align: center; }
+  .contact aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 200px; }
+  .contact .contactinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    background-color: #1f1f24;
+    padding-top: 30px;
+    border-radius: 5px;
+    margin-bottom: 75px; }
+    .contact .contactinfo .contactitem {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: space-between;
+      flex-direction: row;
+      color: white;
+      margin-bottom: 20px;
+      font-family: quickLight;
+      font-size: 20px;
+      width: 90%; }
+  .contact .contactform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%; }
+    .contact .contactform #fname {
+      border-color: white;
+      background-color: black;
+      border-radius: 5px;
+      border-width: 3px;
+      border-style: solid;
+      width: 100%;
+      height: 30px;
+      margin-bottom: 10px; }
+    .contact .contactform #fname::placeholder {
+      font-family: quickLight;
+      color: white; }
+    .contact .contactform #lname {
+      border-color: white;
+      background-color: black;
+      border-style: solid;
+      border-radius: 5px;
+      border-width: 3px;
+      width: 100%;
+      height: 30px;
+      margin-bottom: 10px; }
+    .contact .contactform #lname::placeholder {
+      font-family: quickLight;
+      color: white; }
+    .contact .contactform #message {
+      border-color: white;
+      background-color: black;
+      border-radius: 5px;
+      border-width: 3px;
+      border-style: solid;
+      width: 100%; }
+    .contact .contactform #message::placeholder {
+      font-family: quickLight;
+      color: white;
+      font-size: 14px; }
+    .contact .contactform .submit {
+      display: flex;
+      font-family: quickLight;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      color: #BA01AA;
+      font-weight: bolder;
+      font-size: 18px;
+      background-color: transparent;
+      border-radius: 10px;
+      border-style: solid;
+      border-color: #BA01AA;
+      border-width: 2px;
+      width: 150px;
+      height: 30px;
+      margin-top: 30px;
+      transition: all 0.3s ease 0s;
+      cursor: pointer;
+      z-index: 3;
+      -webkit-backface-visibility: hidden;
+      text-align: center;
+      text-decoration: none; }
+    .contact .contactform .submit:hover, .contact .contactform .submit:active {
+      outline: 0;
+      color: #1f1f24;
+      background-color: #BA01AA;
+      transform: translateY(-6px); }
+  @media only screen and (min-width: 500px) {
+    .contact .contactinfo {
+      width: 500px;
+      height: 275px;
+      margin-bottom: 75px;
+      margin-top: 0; }
+    .contact .contactform {
+      width: 500px;
+      height: 400px; } }
+
+@media only screen and (min-width: 1300px) {
+  .contact {
+    flex-direction: row;
+    padding-bottom: 0px; }
+    .contact aside {
+      margin-right: 100px;
+      margin-top: 0;
+      width: 500px;
+      margin-bottom: 20px;
+      margin-top: 0; }
+    .contact .contactinfo {
+      width: 100%;
+      margin-bottom: 0;
+      margin-top: 0; } }
 .banner {
   overflow: hidden;
   position: absolute;
@@ -688,7 +829,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container1;
-  animation-duration: 384S;
+  animation-duration: 360S;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -697,7 +838,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container2;
-  animation-duration: 461s;
+  animation-duration: 561s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -706,7 +847,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container3;
-  animation-duration: 239s;
+  animation-duration: 300s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -715,7 +856,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container4;
-  animation-duration: 700s;
+  animation-duration: 516s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -724,65 +865,65 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container5;
-  animation-duration: 184s;
+  animation-duration: 291s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
 @keyframes container1 {
   0% {
-    transform: translate(-30vw, 10vh) rotate(15deg); }
+    transform: translate(-30vw, 10vh) rotate(288deg); }
   20% {
-    transform: translate(20vw, 40vh) rotate(284deg); }
+    transform: translate(20vw, 40vh) rotate(99deg); }
   45% {
-    transform: translate(-20vw, 20vh) rotate(458deg); }
+    transform: translate(-20vw, 20vh) rotate(57deg); }
   70% {
-    transform: translate(-40vw, 40vh) rotate(173deg); }
+    transform: translate(-40vw, 40vh) rotate(379deg); }
   100% {
-    transform: translate(30vw, 10vh) rotate(249deg); } }
+    transform: translate(30vw, 10vh) rotate(391deg); } }
 @keyframes container2 {
   0% {
-    transform: translate(35vw, 25vh) rotate(249deg); }
+    transform: translate(35vw, 25vh) rotate(391deg); }
   25% {
-    transform: translate(20vw, 10vh) rotate(173deg); }
+    transform: translate(20vw, 10vh) rotate(379deg); }
   50% {
-    transform: translate(10vw, 35vh) rotate(458deg); }
+    transform: translate(10vw, 35vh) rotate(57deg); }
   75% {
-    transform: translate(-10vw, 50vh) rotate(284deg); }
+    transform: translate(-10vw, 50vh) rotate(99deg); }
   100% {
-    transform: translate(20vw, 20vh) rotate(15deg); } }
+    transform: translate(20vw, 20vh) rotate(288deg); } }
 @keyframes container3 {
   0% {
-    transform: translate(40vw, 70vh) rotate(458deg); }
+    transform: translate(40vw, 70vh) rotate(57deg); }
   30% {
-    transform: translate(50vw, 60vh) rotate(458deg); }
+    transform: translate(50vw, 60vh) rotate(57deg); }
   55% {
-    transform: translate(20vw, 80vh) rotate(173deg); }
+    transform: translate(20vw, 80vh) rotate(379deg); }
   80% {
-    transform: translate(30vw, 65vh) rotate(284deg); }
+    transform: translate(30vw, 65vh) rotate(99deg); }
   100% {
-    transform: translate(10vw, 50vh) rotate(249deg); } }
+    transform: translate(10vw, 50vh) rotate(391deg); } }
 @keyframes container4 {
   0% {
-    transform: translate(-40vw, 90vh) rotate(284deg); }
+    transform: translate(-40vw, 90vh) rotate(99deg); }
   25% {
-    transform: translate(-30vw, 60vh) rotate(173deg); }
+    transform: translate(-30vw, 60vh) rotate(379deg); }
   50% {
-    transform: translate(-20vw, 40vh) rotate(173deg); }
+    transform: translate(-20vw, 40vh) rotate(379deg); }
   75% {
-    transform: translate(-25vw, 30vh) rotate(15deg); }
+    transform: translate(-25vw, 30vh) rotate(288deg); }
   100% {
-    transform: translate(-10vw, 90vh) rotate(458deg); } }
+    transform: translate(-10vw, 90vh) rotate(57deg); } }
 @keyframes container5 {
   0% {
-    transform: translate(-20vw, 40vh) rotate(173deg); }
+    transform: translate(-20vw, 40vh) rotate(379deg); }
   25% {
-    transform: translate(-40vw, 50vh) rotate(15deg); }
+    transform: translate(-40vw, 50vh) rotate(288deg); }
   50% {
-    transform: translate(-10vw, 80vh) rotate(284deg); }
+    transform: translate(-10vw, 80vh) rotate(99deg); }
   75% {
-    transform: translate(-30vw, 60vh) rotate(458deg); }
+    transform: translate(-30vw, 60vh) rotate(57deg); }
   100% {
-    transform: translate(-10vw, 10vh) rotate(173deg); } }
+    transform: translate(-10vw, 10vh) rotate(379deg); } }
 @keyframes line1 {
   0% {
     transform: translateX(22.5vw); }
@@ -830,7 +971,7 @@ h2 {
   border-radius: 40px;
   background-color: #878788;
   animation-name: line1;
-  animation-duration: 15s;
+  animation-duration: 19s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -852,7 +993,7 @@ h2 {
   border-radius: 40px;
   background-color: #878788;
   animation-name: line1;
-  animation-duration: 13s;
+  animation-duration: 11s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 

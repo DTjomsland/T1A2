@@ -11,56 +11,75 @@
 </head>
 
 <body>
-<header class="contentheader">
-    <div class="name">
-        <img class="logo" src="../images/logosmall.png" alt="" />
-        <p>David Tjomsland</p>
-        </div>  
-    <ul class="social">
-        <li>
-            <a href="https://twitter.com/dtjomslandjr" target="_blank"><img class="icon" src="../images/twittericon.png" alt="Twitter Icon" /></a>
-        </li>
-        <li>
-            <a href="https://www.linkedin.com/in/david-tjomsland-b60603140/" target="_blank"><img class="icon" src="../images/linkedinicon.png" alt="Linked In Icon" /></a>
-        </li>
-        <li>
-            <a href="https://github.com/DTjomsland" target="_blank"><img class="icon" src="../images/githubicon.png" alt="Git Hub Icon" /></a>
-        </li>
-    </ul>
-</header>
-<nav>
-    <ul>
-        <li>
-            <a href="../index.html"><img class="navicon" src="../images/homelogo.svg" alt="Home Icon" /><span
-                    class="displaynone">Home</span></a>
-        </li>
-        <li>
-            <a href="../aboutme.html"><img class="navicon" src="../images/abou logo.svg" alt="About Me Icon" /><span
-                    class="displaynone">About Me</span></a>
-        </li>
-        <li>
-            <a href="../projects.html"><img class="navicon" src="../images/portfoliologo.svg" alt="Projects Icon" /><span
-                    class="displaynone">Projects</span></a>
-        </li>
-        <li>
-            <a href="../blog.html"><img class="navicon" src="../images/bloglogo.svg" alt="Blog Icon" /><span
-                    class="displaynone">Blog</span></a>
-        </li>
-        <li>
-            <a href="../contact.html"><img class="navicon" src="../images/contactlogo.svg" alt="Contact Icon" /><span
-                    class="displaynone">Contact</span></a>
-        </li>
-    </ul>
-</nav>
+    <header class="contentheader">
+        <div class="name">
+            <img class="logo" src="images/logosmall.png" alt="" />
+            <p>David Tjomsland</p>
+            </div>  
+        <ul class="social">
+            <li>
+                <a href="https://twitter.com/dtjomslandjr" target="_blank"><img class="icon" src="images/twittericon.png" alt="Twitter Icon" /></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/david-tjomsland-b60603140/" target="_blank"><img class="icon" src="images/linkedinicon.png" alt="Linkedin Icon" /></a>
+            </li>
+            <li>
+                <a href="https://github.com/DTjomsland" target="_blank"><img class="icon" src="images/githubicon.png" alt="GitHub Icon" /></a>
+            </li>
+        </ul>
+    </header>
+    <nav class>
+        <ul>
+            <li>
+                <a href="index.html"><img class="navicon" src="images/homelogo.svg" alt="Home Icon" /><span
+                        class="displaynone">Home</span></a>
+            </li>
+            <li>
+                <a href="aboutme.html"><img class="navicon" src="images/abou logo.svg" alt="About Me Icon" /><span
+                        class="displaynone">About Me</span></a>
+            </li>
+            <li>
+                <a href="projects.html"><img class="navicon" src="images/portfoliologo.svg" alt="Projects Icon" /><span
+                        class="displaynone">Projects</span></a>
+            </li>
+            <li>
+                <a href="blog.html"><img class="navicon" src="images/bloglogo.svg" alt="Blog Icon" /><span
+                        class="displaynone">Blog</span></a>
+            </li>
+            <li>
+                <a href="contact.html"><img class="navicon" src="images/contactlogo.svg" alt="Contact Icon" /><span
+                        class="displaynone">Contact</span></a>
+            </li>
+        </ul>
+    </nav>
 <main>
     <section class="hero">
         <h1>Let's get <span>in touch</span>.</h1>
-        <a data-scroll href="#projects">
+        <a data-scroll href="#contact">
             <div class="arrow"></div>
           </a>
         </section>
-    <section class="contact">
-
+    <section class="contact" id="contact">
+         <aside>  
+            <h3>Details</h3>
+            <div class="contactinfo">
+            <div class="contactitem"><img src="images/navigationicon.png" alt=""><p>Perth, Australia</p></div>
+            <div class="contactitem"><img src="images/emailicon.png" alt=""><p>dtjomslandjr@gmail.com</p></div>
+            <div class="contactitem"><img src="images/phoneicon.png" alt=""><p>+61 456 362 847</p></div>
+            <div class="contactitem"><img src="images/discordicon.png" alt=""><p>David Tjomsland#6967</p></div>
+            </div>
+        </aside>
+        <form class="contactform" action="">
+            <h3>Message</h3>
+            <label for="fname"></label>
+            <input type="firstname" id="fname" placeholder="First Name">
+            <label for="lname"></label>
+            <input type="lastname" id="lname" placeholder="Last Name">
+            <label for=""></label>
+            <label for="message"></label>
+            <textarea id="message" name="subject" placeholder="Tell me something good!" style="height:200px"></textarea>
+            <input class="submit" type="submit" value="Submit">
+        </form>
     </section>
 </main>
 </body>

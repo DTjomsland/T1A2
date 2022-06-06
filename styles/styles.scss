@@ -173,20 +173,23 @@ nav {
     }
 }
 
+
+// Styling for the landing page
+
 .landing {
     z-index: 100;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
-    height: 100%;
+    height: 100vh;
     
 
     h1{
         font-family:quickLight;
         color: white;
         font-size: 60px;
-        margin-top: 300px;
+        // margin-top: 250px;
         span {
             color:#BA01AA;
         }
@@ -222,11 +225,12 @@ nav {
         align-self: center;
         color: #BA01AA;
         font-weight: bolder;
-        font-size: 25px;
+        font-size: 20px;
         background-color: transparent;
         border-radius: 10px;
         border-style: solid;
         border-color: #BA01AA;
+        border-width: 2px;
         width: 150px;
         height: 35px;
         margin-top:100px;
@@ -239,14 +243,14 @@ nav {
     }
     .button:hover, button:active {
         outline: 0;
-        color: #1f1f24;
+        color: black;
         background-color: #BA01AA;
         transform: translateY(-6px);
     }
     @media only screen and (max-width: 600px) {
         h1 {
             font-size: 35px;
-            margin-top: 150px;
+            // margin-top: 150px;
         }
         p {
             font-size: 20px;
@@ -275,7 +279,7 @@ nav {
         
 
         .aboutimg {
-            width: 400px;
+            width: 350px;
             border-radius: 50%;
         }
 
@@ -342,8 +346,10 @@ nav {
     width: 85%;
     border-radius: 5px;
     font-family: quickLight;
-    padding: 30px;
-    margin: 10px auto;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 450px;
+    
 
     .cardtitle {
         display: flex;
@@ -362,46 +368,41 @@ nav {
         color: white;
     }
 
-    form {
-        display: flex;
-        justify-content: center;
-    }
-
-    .button {
-        display: flex;
-        font-family: quickLight;
-        align-items: center;
-        justify-content: center;
-        align-self: center;
-        color: #BA01AA;
-        font-weight: bolder;
-        font-size: 18px;
-        background-color: transparent;
-        border-radius: 10px;
-        border-style: solid;
-        border-color: #BA01AA;
-        width: 125px;
-        height: 30px;
-        margin-top: 40px;
-        transition: all 0.3s ease 0s;
-        cursor: pointer;
-        z-index: 3;
-        -webkit-backface-visibility: hidden;
-        text-align: center;
-        text-decoration: none;
-    }
-    .button:hover, button:active {
-        outline: 0;
-        color: #1f1f24;
-        background-color: #BA01AA;
-        transform: translateY(-6px);
-    }
-
+}
+.button {
+    display: flex;
+    font-family: quickLight;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    color: #BA01AA;
+    font-weight: bolder;
+    font-size: 18px;
+    background-color: transparent;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #BA01AA;
+    border-width: 2px;
+    width: 150px;
+    height: 30px;
+    margin-top: 40px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    z-index: 3;
+    -webkit-backface-visibility: hidden;
+    text-align: center;
+    text-decoration: none;
+}
+.button:hover, button:active {
+    outline: 0;
+    color: black;
+    background-color: #BA01AA;
+    transform: translateY(-6px);
 }
 
 @media only screen and (min-width: 800px) {
     .card {
-        width: 55%;
+        width: 450px;
     }
 }
 
@@ -414,6 +415,7 @@ nav {
 
     .card {
         width: 27%;
+        max-width: 450px;
     }
 
 }
@@ -702,6 +704,7 @@ h1 {
         border-radius: 10px;
         border-style: solid;
         border-color: #BA01AA;
+        border-width: 2px;
         width: 150px;
         height: 30px;
         margin-top: 20px;
@@ -714,7 +717,7 @@ h1 {
     }
     .button:hover, button:active {
         outline: 0;
-        color: #1f1f24;
+        color: black;
         background-color: #BA01AA;
         transform: translateY(-6px);
     }
@@ -891,6 +894,7 @@ h1 {
             border-radius: 10px;
             border-style: solid;
             border-color: #BA01AA;
+            border-width: 2px;
             width: 150px;
             height: 30px;
             margin-top: 20px;
@@ -915,7 +919,166 @@ h1 {
                 }
     }
   
-
+.contact {
+    margin-top: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    background-color: black;
+    height: 900px;
+    padding-bottom: 300px;
+    h3 {
+        font-family: quickLight;
+        color: white;
+        font-size: 35px;
+        color: white;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 200px;
+    }
+    .contactinfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        background-color: #1f1f24;
+        padding-top: 30px;
+        border-radius: 5px;
+        margin-bottom: 75px;
+        .contactitem {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: space-between;
+            flex-direction: row;
+            color: white;
+            margin-bottom: 20px;
+            font-family: quickLight;
+            font-size: 20px;
+            width: 90%;
+        }
+    }
+    .contactform {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        #fname {
+            border-color: white;
+            background-color: black;
+            border-radius: 5px;
+            border-width: 3px;
+            border-style: solid;
+            width: 100%;
+            height: 30px;
+            margin-bottom: 10px;
+        }
+        #fname::placeholder {
+            font-family: quickLight;
+            color: white;
+        }
+        #lname {
+            border-color: white;
+            background-color: black;
+            border-style: solid;
+            border-radius: 5px;
+            border-width: 3px;
+            width: 100%;
+            height: 30px;
+            margin-bottom: 10px;
+        }
+        #lname::placeholder {
+            font-family: quickLight;
+            color: white;
+        }
+        #message {
+            border-color: white;
+            background-color: black;
+            border-radius: 5px;
+            border-width: 3px;
+            border-style: solid;
+            width: 100%;
+        }
+        #message::placeholder {
+            font-family: quickLight;
+            color: white;
+            font-size: 14px;
+        }
+        .submit {
+            display: flex;
+            font-family: quickLight;
+            align-items: center;
+            justify-content: center;
+            align-self: center;
+            color: #BA01AA;
+            font-weight: bolder;
+            font-size: 18px;
+            background-color: transparent;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: #BA01AA;
+            border-width: 2px;
+            width: 150px;
+            height: 30px;
+            margin-top: 30px;
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+            z-index: 3;
+            -webkit-backface-visibility: hidden;
+            text-align: center;
+            text-decoration: none;
+        }
+        .submit:hover, .submit:active {
+            outline: 0;
+            color: #1f1f24;
+            background-color: #BA01AA;
+            transform: translateY(-6px);
+        }
+    }
+    @media only screen and (min-width: 500px) {
+        .contactinfo {
+            width: 500px;
+            height: 275px;
+            margin-bottom: 75px;
+            margin-top: 0;
+        }
+        .contactform {
+            width: 500px;
+            height: 400px;
+        }
+    }
+}
+@media only screen and (min-width: 1300px) {
+    .contact {
+        flex-direction: row;
+        padding-bottom: 0px;
+    
+    aside {
+        margin-right: 100px;
+        margin-top: 0;
+        width: 500px;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+    .contactinfo {
+        width: 100%;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+}
+    
+}
 
 
 
