@@ -834,7 +834,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container1;
-  animation-duration: 382S;
+  animation-duration: 490S;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -843,7 +843,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container2;
-  animation-duration: 467s;
+  animation-duration: 592s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -852,7 +852,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container3;
-  animation-duration: 371s;
+  animation-duration: 261s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -861,7 +861,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container4;
-  animation-duration: 624s;
+  animation-duration: 641s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -870,65 +870,65 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container5;
-  animation-duration: 258s;
+  animation-duration: 119s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
 @keyframes container1 {
   0% {
-    transform: translate(-30vw, 10vh) rotate(138deg); }
+    transform: translate(-30vw, 10vh) rotate(154deg); }
   20% {
-    transform: translate(20vw, 40vh) rotate(261deg); }
+    transform: translate(20vw, 40vh) rotate(263deg); }
   45% {
-    transform: translate(-20vw, 20vh) rotate(91deg); }
+    transform: translate(-20vw, 20vh) rotate(286deg); }
   70% {
-    transform: translate(-40vw, 40vh) rotate(456deg); }
+    transform: translate(-40vw, 40vh) rotate(391deg); }
   100% {
-    transform: translate(30vw, 10vh) rotate(347deg); } }
+    transform: translate(30vw, 10vh) rotate(133deg); } }
 @keyframes container2 {
   0% {
-    transform: translate(35vw, 25vh) rotate(347deg); }
+    transform: translate(35vw, 25vh) rotate(133deg); }
   25% {
-    transform: translate(20vw, 10vh) rotate(456deg); }
+    transform: translate(20vw, 10vh) rotate(391deg); }
   50% {
-    transform: translate(10vw, 35vh) rotate(91deg); }
+    transform: translate(10vw, 35vh) rotate(286deg); }
   75% {
-    transform: translate(-10vw, 50vh) rotate(261deg); }
+    transform: translate(-10vw, 50vh) rotate(263deg); }
   100% {
-    transform: translate(20vw, 20vh) rotate(138deg); } }
+    transform: translate(20vw, 20vh) rotate(154deg); } }
 @keyframes container3 {
   0% {
-    transform: translate(40vw, 70vh) rotate(91deg); }
+    transform: translate(40vw, 70vh) rotate(286deg); }
   30% {
-    transform: translate(50vw, 60vh) rotate(91deg); }
+    transform: translate(50vw, 60vh) rotate(286deg); }
   55% {
-    transform: translate(20vw, 80vh) rotate(456deg); }
+    transform: translate(20vw, 80vh) rotate(391deg); }
   80% {
-    transform: translate(30vw, 65vh) rotate(261deg); }
+    transform: translate(30vw, 65vh) rotate(263deg); }
   100% {
-    transform: translate(10vw, 50vh) rotate(347deg); } }
+    transform: translate(10vw, 50vh) rotate(133deg); } }
 @keyframes container4 {
   0% {
-    transform: translate(-40vw, 90vh) rotate(261deg); }
+    transform: translate(-40vw, 90vh) rotate(263deg); }
   25% {
-    transform: translate(-30vw, 60vh) rotate(456deg); }
+    transform: translate(-30vw, 60vh) rotate(391deg); }
   50% {
-    transform: translate(-20vw, 40vh) rotate(456deg); }
+    transform: translate(-20vw, 40vh) rotate(391deg); }
   75% {
-    transform: translate(-25vw, 30vh) rotate(138deg); }
+    transform: translate(-25vw, 30vh) rotate(154deg); }
   100% {
-    transform: translate(-10vw, 90vh) rotate(91deg); } }
+    transform: translate(-10vw, 90vh) rotate(286deg); } }
 @keyframes container5 {
   0% {
-    transform: translate(-20vw, 40vh) rotate(456deg); }
+    transform: translate(-20vw, 40vh) rotate(391deg); }
   25% {
-    transform: translate(-40vw, 50vh) rotate(138deg); }
+    transform: translate(-40vw, 50vh) rotate(154deg); }
   50% {
-    transform: translate(-10vw, 80vh) rotate(261deg); }
+    transform: translate(-10vw, 80vh) rotate(263deg); }
   75% {
-    transform: translate(-30vw, 60vh) rotate(91deg); }
+    transform: translate(-30vw, 60vh) rotate(286deg); }
   100% {
-    transform: translate(-10vw, 10vh) rotate(456deg); } }
+    transform: translate(-10vw, 10vh) rotate(391deg); } }
 @keyframes line1 {
   0% {
     transform: translateX(22.5vw); }
@@ -976,7 +976,7 @@ h2 {
   border-radius: 40px;
   background-color: #878788;
   animation-name: line1;
-  animation-duration: 14s;
+  animation-duration: 16s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -987,7 +987,7 @@ h2 {
   border-radius: 40px;
   background-color: #878788;
   animation-name: line1;
-  animation-duration: 16s;
+  animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse; }
 
@@ -998,7 +998,7 @@ h2 {
   border-radius: 40px;
   background-color: #878788;
   animation-name: line1;
-  animation-duration: 17s;
+  animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
