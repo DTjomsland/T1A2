@@ -62,28 +62,46 @@ header {
     header ul li:hover {
       transform: translateY(7px) scale(1.2); }
 
-nav {
+.sidebar {
   display: flex;
-  width: 100%;
-  justify-content: center;
+  top: 0;
+  width: 200px;
+  height: 100vh;
   position: fixed;
-  bottom: 0;
-  height: 40px;
-  z-index: 100;
-  margin: auto;
-  background-color: #070707f7; }
-  nav ul {
+  right: -150px;
+  transition: 0.3s ease;
+  z-index: 1000; }
+  .sidebar nav {
+    width: 130px;
+    height: 100%;
+    position: relative;
+    border-right: solid black 2px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #111111;
+    margin-right: 10px; }
+  .sidebar .social {
     display: flex;
+    justify-content: space-around; }
+    .sidebar .social li {
+      list-style: none; }
+      .sidebar .social li img {
+        width: 30px; }
+    .sidebar .social a:hover {
+      filter: brightness(0) saturate(100%) invert(15%) sepia(97%) saturate(3724%) hue-rotate(295deg) brightness(90%) contrast(114%); }
+  .sidebar .mainnav {
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    width: 800px;
-    background-color: #070707f7;
+    width: 100%;
+    height: 70%;
     align-content: center;
     align-items: center;
     margin-right: 10px; }
-    nav ul li {
+    .sidebar .mainnav li {
       list-style: none;
       transition: all 0.1s ease 0s; }
-      nav ul li a {
+      .sidebar .mainnav li a {
         display: flex;
         align-content: center;
         align-items: center;
@@ -91,26 +109,34 @@ nav {
         color: white;
         font-family: quickLight;
         font-size: 18px; }
-        nav ul li a img {
+        .sidebar .mainnav li a img {
           height: 16px;
           margin-right: 5px; }
-        nav ul li a .active {
+        .sidebar .mainnav li a .active {
           filter: brightness(0) saturate(100%) invert(5%) sepia(3%) saturate(5674%) hue-rotate(201deg) brightness(95%) contrast(82%); }
-      nav ul li a:hover {
+      .sidebar .mainnav li a:hover {
         filter: brightness(0) saturate(100%) invert(15%) sepia(97%) saturate(3724%) hue-rotate(295deg) brightness(90%) contrast(114%); }
+  .sidebar .hovericon {
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px; }
+    .sidebar .hovericon .bar {
+      display: block;
+      margin: 4px 0;
+      width: 30px;
+      height: 3px;
+      background-color: white; }
 
-.hidden {
-  visibility: hidden; }
-
-@media only screen and (max-width: 600px) {
-  header {
-    background-color: rgba(0, 0, 0, 0.925); } }
-@media only screen and (max-width: 800px) {
-  .displaynone {
+.sidebar:hover {
+  transform: translateX(-80px); }
+  .sidebar:hover .hovericon {
     display: none; }
 
-  .navicon {
-    height: 25px; } }
 .landing {
   z-index: 100;
   display: flex;
@@ -836,7 +862,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container1;
-  animation-duration: 481S;
+  animation-duration: 482S;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -845,7 +871,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container2;
-  animation-duration: 434s;
+  animation-duration: 588s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -854,7 +880,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container3;
-  animation-duration: 318s;
+  animation-duration: 270s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -863,7 +889,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container4;
-  animation-duration: 614s;
+  animation-duration: 678s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -872,65 +898,65 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container5;
-  animation-duration: 278s;
+  animation-duration: 117s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
 @keyframes container1 {
   0% {
-    transform: translate(-30vw, 10vh) rotate(168deg); }
+    transform: translate(-30vw, 10vh) rotate(81deg); }
   20% {
-    transform: translate(20vw, 40vh) rotate(69deg); }
+    transform: translate(20vw, 40vh) rotate(463deg); }
   45% {
-    transform: translate(-20vw, 20vh) rotate(317deg); }
+    transform: translate(-20vw, 20vh) rotate(100deg); }
   70% {
-    transform: translate(-40vw, 40vh) rotate(90deg); }
+    transform: translate(-40vw, 40vh) rotate(458deg); }
   100% {
-    transform: translate(30vw, 10vh) rotate(340deg); } }
+    transform: translate(30vw, 10vh) rotate(264deg); } }
 @keyframes container2 {
   0% {
-    transform: translate(35vw, 25vh) rotate(340deg); }
+    transform: translate(35vw, 25vh) rotate(264deg); }
   25% {
-    transform: translate(20vw, 10vh) rotate(90deg); }
+    transform: translate(20vw, 10vh) rotate(458deg); }
   50% {
-    transform: translate(10vw, 35vh) rotate(317deg); }
+    transform: translate(10vw, 35vh) rotate(100deg); }
   75% {
-    transform: translate(-10vw, 50vh) rotate(69deg); }
+    transform: translate(-10vw, 50vh) rotate(463deg); }
   100% {
-    transform: translate(20vw, 20vh) rotate(168deg); } }
+    transform: translate(20vw, 20vh) rotate(81deg); } }
 @keyframes container3 {
   0% {
-    transform: translate(40vw, 70vh) rotate(317deg); }
+    transform: translate(40vw, 70vh) rotate(100deg); }
   30% {
-    transform: translate(50vw, 60vh) rotate(317deg); }
+    transform: translate(50vw, 60vh) rotate(100deg); }
   55% {
-    transform: translate(20vw, 80vh) rotate(90deg); }
+    transform: translate(20vw, 80vh) rotate(458deg); }
   80% {
-    transform: translate(30vw, 65vh) rotate(69deg); }
+    transform: translate(30vw, 65vh) rotate(463deg); }
   100% {
-    transform: translate(10vw, 50vh) rotate(340deg); } }
+    transform: translate(10vw, 50vh) rotate(264deg); } }
 @keyframes container4 {
   0% {
-    transform: translate(-40vw, 90vh) rotate(69deg); }
+    transform: translate(-40vw, 90vh) rotate(463deg); }
   25% {
-    transform: translate(-30vw, 60vh) rotate(90deg); }
+    transform: translate(-30vw, 60vh) rotate(458deg); }
   50% {
-    transform: translate(-20vw, 40vh) rotate(90deg); }
+    transform: translate(-20vw, 40vh) rotate(458deg); }
   75% {
-    transform: translate(-25vw, 30vh) rotate(168deg); }
+    transform: translate(-25vw, 30vh) rotate(81deg); }
   100% {
-    transform: translate(-10vw, 90vh) rotate(317deg); } }
+    transform: translate(-10vw, 90vh) rotate(100deg); } }
 @keyframes container5 {
   0% {
-    transform: translate(-20vw, 40vh) rotate(90deg); }
+    transform: translate(-20vw, 40vh) rotate(458deg); }
   25% {
-    transform: translate(-40vw, 50vh) rotate(168deg); }
+    transform: translate(-40vw, 50vh) rotate(81deg); }
   50% {
-    transform: translate(-10vw, 80vh) rotate(69deg); }
+    transform: translate(-10vw, 80vh) rotate(463deg); }
   75% {
-    transform: translate(-30vw, 60vh) rotate(317deg); }
+    transform: translate(-30vw, 60vh) rotate(100deg); }
   100% {
-    transform: translate(-10vw, 10vh) rotate(90deg); } }
+    transform: translate(-10vw, 10vh) rotate(458deg); } }
 @keyframes line1 {
   0% {
     transform: translateX(22.5vw); }
@@ -989,7 +1015,7 @@ h2 {
   border-radius: 40px;
   background-color: #878788;
   animation-name: line1;
-  animation-duration: 11s;
+  animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse; }
 
@@ -1000,7 +1026,7 @@ h2 {
   border-radius: 40px;
   background-color: #878788;
   animation-name: line1;
-  animation-duration: 17s;
+  animation-duration: 18s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
