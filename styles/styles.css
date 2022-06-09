@@ -42,7 +42,8 @@ header {
     display: flex;
     align-items: center; }
     header .name .logo {
-      height: 75px; }
+      height: 45px;
+      margin-right: 10px; }
     header .name p {
       color: white;
       font-size: 25px;
@@ -67,7 +68,7 @@ nav {
   width: 100vw;
   justify-content: center;
   position: fixed;
-  bottom: 0;
+  bottom: 5px;
   height: 40px;
   z-index: 100; }
   nav ul {
@@ -171,7 +172,8 @@ nav {
     -webkit-backface-visibility: hidden;
     text-align: center;
     text-decoration: none; }
-  .landing .button:hover, .landing button:active {
+  .landing .button:hover,
+  .landing button:active {
     outline: 0;
     color: black;
     background-color: #BA01AA;
@@ -192,7 +194,8 @@ nav {
   align-items: center;
   margin-top: 100vh;
   background-color: black;
-  width: 100%; }
+  width: 100%;
+  border-top: white solid 1px; }
   .aboutme article {
     display: flex;
     flex-direction: column;
@@ -289,7 +292,8 @@ nav {
   text-align: center;
   text-decoration: none; }
 
-.button:hover, button:active {
+.button:hover,
+button:active {
   outline: 0;
   color: black;
   background-color: #BA01AA;
@@ -362,7 +366,8 @@ nav {
       .funfacts .books a {
         width: 60%; } }
     @media only screen and (min-width: 1200px) {
-      .funfacts .spotify .spotify, .funfacts .spotify .books,
+      .funfacts .spotify .spotify,
+      .funfacts .spotify .books,
       .funfacts .books .spotify,
       .funfacts .books .books {
         width: 50%; }
@@ -481,15 +486,16 @@ h2 {
   margin-top: 100vh;
   background-color: black;
   padding-bottom: 150px;
-  padding-top: 200px; }
+  padding-top: 200px;
+  border-top: white solid 1px; }
   .projects .grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 900px;
+    width: 1000px;
     margin: 0 auto; }
   .projects .col {
-    margin: 25px 25px 20px 25px;
+    margin: 15px 15px 10px 15px;
     position: relative;
     width: 300px; }
   .projects img {
@@ -552,7 +558,8 @@ h2 {
       -webkit-backface-visibility: hidden;
       text-align: center;
       text-decoration: none; }
-    .projects .overlay .button:hover, .projects .overlay button:active {
+    .projects .overlay .button:hover,
+    .projects .overlay button:active {
       outline: 0;
       color: black;
       background-color: #BA01AA;
@@ -562,7 +569,7 @@ h2 {
     transform: scale(1.075); }
   .projects .col:hover .backgroundimg {
     transform: scale(1.05); }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 1000px) {
     .projects .grid {
       width: 90%; }
     .projects p {
@@ -572,8 +579,9 @@ h2 {
   margin-top: 100vh;
   background-color: black;
   padding-bottom: 150px;
-  padding-top: 50px;
-  width: 100%; }
+  padding-top: 200px;
+  width: 100%;
+  border-top: white solid 1px; }
   .blog .grid {
     display: flex;
     flex-wrap: wrap;
@@ -699,7 +707,8 @@ h2 {
       -webkit-backface-visibility: hidden;
       text-align: center;
       text-decoration: none; }
-    .blogbody article .button:hover, .blogbody article button:active {
+    .blogbody article .button:hover,
+    .blogbody article button:active {
       outline: 0;
       color: #1f1f24;
       background-color: #BA01AA;
@@ -718,7 +727,8 @@ h2 {
   width: 100%;
   background-color: black;
   height: 900px;
-  padding-bottom: 300px; }
+  padding-bottom: 300px;
+  border-top: white solid 1px; }
   .contact h3 {
     font-family: quickLight;
     color: white;
@@ -818,7 +828,8 @@ h2 {
       -webkit-backface-visibility: hidden;
       text-align: center;
       text-decoration: none; }
-    .contact .contactform .submit:hover, .contact .contactform .submit:active {
+    .contact .contactform .submit:hover,
+    .contact .contactform .submit:active {
       outline: 0;
       color: #1f1f24;
       background-color: #BA01AA;
@@ -863,7 +874,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container1;
-  animation-duration: 391S;
+  animation-duration: 341S;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -872,7 +883,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container2;
-  animation-duration: 569s;
+  animation-duration: 565s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -881,7 +892,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container3;
-  animation-duration: 374s;
+  animation-duration: 367s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -890,7 +901,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container4;
-  animation-duration: 627s;
+  animation-duration: 503s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -905,59 +916,59 @@ h2 {
 
 @keyframes container1 {
   0% {
-    transform: translate(-30vw, 10vh) rotate(1deg); }
+    transform: translate(-30vw, 10vh) rotate(186deg); }
   20% {
-    transform: translate(20vw, 40vh) rotate(123deg); }
+    transform: translate(20vw, 40vh) rotate(111deg); }
   45% {
-    transform: translate(-20vw, 20vh) rotate(590deg); }
+    transform: translate(-20vw, 20vh) rotate(15deg); }
   70% {
-    transform: translate(-40vw, 40vh) rotate(170deg); }
+    transform: translate(-40vw, 40vh) rotate(448deg); }
   100% {
-    transform: translate(30vw, 10vh) rotate(33deg); } }
+    transform: translate(30vw, 10vh) rotate(475deg); } }
 @keyframes container2 {
   0% {
-    transform: translate(35vw, 25vh) rotate(33deg); }
+    transform: translate(35vw, 25vh) rotate(475deg); }
   25% {
-    transform: translate(20vw, 10vh) rotate(170deg); }
+    transform: translate(20vw, 10vh) rotate(448deg); }
   50% {
-    transform: translate(10vw, 35vh) rotate(590deg); }
+    transform: translate(10vw, 35vh) rotate(15deg); }
   75% {
-    transform: translate(-10vw, 50vh) rotate(123deg); }
+    transform: translate(-10vw, 50vh) rotate(111deg); }
   100% {
-    transform: translate(20vw, 20vh) rotate(1deg); } }
+    transform: translate(20vw, 20vh) rotate(186deg); } }
 @keyframes container3 {
   0% {
-    transform: translate(40vw, 70vh) rotate(590deg); }
+    transform: translate(40vw, 70vh) rotate(15deg); }
   30% {
-    transform: translate(50vw, 60vh) rotate(590deg); }
+    transform: translate(50vw, 60vh) rotate(15deg); }
   55% {
-    transform: translate(20vw, 80vh) rotate(170deg); }
+    transform: translate(20vw, 80vh) rotate(448deg); }
   80% {
-    transform: translate(30vw, 65vh) rotate(123deg); }
+    transform: translate(30vw, 65vh) rotate(111deg); }
   100% {
-    transform: translate(10vw, 50vh) rotate(33deg); } }
+    transform: translate(10vw, 50vh) rotate(475deg); } }
 @keyframes container4 {
   0% {
-    transform: translate(-40vw, 90vh) rotate(123deg); }
+    transform: translate(-40vw, 90vh) rotate(111deg); }
   25% {
-    transform: translate(-30vw, 60vh) rotate(170deg); }
+    transform: translate(-30vw, 60vh) rotate(448deg); }
   50% {
-    transform: translate(-20vw, 40vh) rotate(170deg); }
+    transform: translate(-20vw, 40vh) rotate(448deg); }
   75% {
-    transform: translate(-25vw, 30vh) rotate(1deg); }
+    transform: translate(-25vw, 30vh) rotate(186deg); }
   100% {
-    transform: translate(-10vw, 90vh) rotate(590deg); } }
+    transform: translate(-10vw, 90vh) rotate(15deg); } }
 @keyframes container5 {
   0% {
-    transform: translate(-20vw, 40vh) rotate(170deg); }
+    transform: translate(-20vw, 40vh) rotate(448deg); }
   25% {
-    transform: translate(-40vw, 50vh) rotate(1deg); }
+    transform: translate(-40vw, 50vh) rotate(186deg); }
   50% {
-    transform: translate(-10vw, 80vh) rotate(123deg); }
+    transform: translate(-10vw, 80vh) rotate(111deg); }
   75% {
-    transform: translate(-30vw, 60vh) rotate(590deg); }
+    transform: translate(-30vw, 60vh) rotate(15deg); }
   100% {
-    transform: translate(-10vw, 10vh) rotate(170deg); } }
+    transform: translate(-10vw, 10vh) rotate(448deg); } }
 @keyframes line1 {
   0% {
     transform: translateX(22.5vw); }
@@ -1005,7 +1016,7 @@ h2 {
   border-radius: 40px;
   background-color: #87878850;
   animation-name: line1;
-  animation-duration: 12s;
+  animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -1016,7 +1027,7 @@ h2 {
   border-radius: 40px;
   background-color: #87878850;
   animation-name: line1;
-  animation-duration: 14s;
+  animation-duration: 11s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse; }
 
@@ -1027,7 +1038,7 @@ h2 {
   border-radius: 40px;
   background-color: #87878850;
   animation-name: line1;
-  animation-duration: 11s;
+  animation-duration: 12s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
