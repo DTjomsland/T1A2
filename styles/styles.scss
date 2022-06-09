@@ -101,21 +101,21 @@ header {
 
 nav {
     display: flex;
-    width: 100%;
+    width: 100vw;
     justify-content: center;
     position: fixed;
     bottom: 0;
-    height: 60px;
+    height: 40px;
     z-index: 100;
 
     ul {
         display: flex;
         justify-content: space-around;
-        width: 100%;
-        background-color: #070707f7;
+        width: 90%;
         align-content: center;
         align-items: center;
-        margin-right: 10px;
+        background-color: #191919;
+        border-radius: 10px;
 
         li {
             list-style: none;
@@ -128,7 +128,7 @@ nav {
                 text-decoration: none;
                 color: rgb(255, 255, 255);
                 font-family: quickLight;
-                font-size: 22px;
+                font-size: 18px;
 
                 img {
                     height: 16px;
@@ -148,6 +148,21 @@ nav {
         }
     }
 }
+
+@media only screen and (min-width: 800px) {
+   nav {
+     bottom: 40px;
+     height: 60px;
+   ul {
+       width: 70%;
+       bottom: 40px;
+       background-color: #191919;
+       border-radius: 20px;
+   }
+    }
+}
+
+
 
 .hidden {
     visibility: hidden;
@@ -278,8 +293,7 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
-        // flex-wrap: wrap;
+        justify-content: center;
         padding-top: 100px;
         width: 90%;
         
@@ -299,11 +313,13 @@ nav {
             // padding: 25px 25px 50px 25px;
             span {
                 color: #BA01AA;
+                font-family: quickRegular;
             }
         }
         @media only screen and (min-width: 1200px) {
             .aboutimg {
-                width: 440px;
+                width: 350px;
+                margin-right: 30px;
             }
     }
     h1 {
@@ -318,7 +334,7 @@ nav {
         article {
             flex-direction: row;
             p {
-                font-size: 22px;
+                font-size: 20px;
                 width: 40%;
             }
     }
@@ -339,9 +355,10 @@ nav {
 .background {
     display: flex;
     flex-direction: column;
-    align-items: center stretch;
-    width: 90%;
-    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .titlestyle {
@@ -352,12 +369,13 @@ nav {
 .card {
     display: flex;
     flex-direction: column;
-    background-color: #1f1f24;
-    width: 85%;
+    background-color: #111111;
+    width: 80%;
     font-family: quickLight;
     padding: 30px;
-    margin: 20px auto;
     max-width: 450px;
+    border-radius: 5px;
+    margin: 15px 0;
     
 
     .cardtitle {
@@ -366,7 +384,7 @@ nav {
         justify-content: space-between;
 
         h3 {
-            font-size: 25px;
+            font-size: 20px;
             color:white;
         }
     }
@@ -411,20 +429,24 @@ nav {
 
 @media only screen and (min-width: 800px) {
     .card {
-        width: 450px;
+        width: 350px;
+        p {
+            font-size: 15px;
+        }
     }
 }
 
 @media only screen and (min-width: 1200px) {
     .background {
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
         width: 90%;
     }
 
     .card {
-        width: 27%;
+        width: 350px;
         max-width: 450px;
+        margin: 10px;
     }
 
 }
@@ -433,7 +455,7 @@ nav {
 .funfacts {
     display: flex;
     flex-direction: column;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
     .spotify,
     .books {
         display: flex;
@@ -457,9 +479,10 @@ nav {
             justify-content: space-between;
             padding: 20px;
             margin: 10px 0;
-            background-color: #1f1f24;
+            background-color: #111111;
             align-items: center;
             width: 100%;
+            border-radius: 5px;
             -webkit-transform: translate3D(0, 0, 0);
         }
 
@@ -476,7 +499,7 @@ nav {
             transition: 0.3s ease;
         }
         a:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
             img {
             filter: brightness(0) saturate(100%) invert(15%) sepia(97%) saturate(3724%) hue-rotate(295deg) brightness(90%) contrast(114%);
             }
@@ -491,15 +514,16 @@ nav {
             .spotify, .books {
                 width: 50%;
             }
-            h2 {
-                width: 80%;
+
+            .line2 {
+                width: 90%;
             }
             a{
                 width:60%;
             }
             .smallcard {
                 width: 100%;
-                height: 60px;
+                height: 50px;
             }
         }
     }
@@ -507,6 +531,11 @@ nav {
 @media only screen and (min-width: 1200px) {
     .funfacts {
         flex-direction: row-reverse;
+        width: 80%;
+        margin: auto;
+    }
+    .longline {
+        width: 75%;
     }
 }
 
@@ -514,13 +543,14 @@ nav {
 h2 {
     position: relative;
     display: inline-block;
-    width: 95%;
+    width: 90%;
     font-family: quickLight;
-    font-size: 40px;
+    font-size: 30px;
     color:white;
     padding: 50px 0;
     margin-left: 20px;
-    margin-right: 0;
+    margin-right: 20px;
+    margin-top: 50px;
 }
 .line {
     display: flex;
@@ -560,6 +590,7 @@ h2 {
         margin-right: 15px;
     }
 }
+
 
 
 // Styling for portfolio page
@@ -633,24 +664,23 @@ h1 {
 }
 
 
-
-
 .projects {
     margin-top: 100vh;
     background-color: black;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
     padding-top: 200px;
    
 .grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 70%;
+    width: 900px;
     margin: 0 auto;
   }
   .col {
     margin: 25px 25px 20px 25px;
     position: relative;
+    width: 300px;
   }
   
 
@@ -670,7 +700,6 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
     position: absolute;
     top: 0;
     bottom: 0;
@@ -680,7 +709,7 @@ h1 {
     width: 100%;
     opacity: 0;
     transition: .3s ease;
-    background-color: #1f1f24;
+    background-color: #111111;
     border-radius: 10px;
     h3 {
         color:white;
@@ -694,6 +723,7 @@ h1 {
         color: white;
         width: 90%;
         margin-bottom: 8%;
+        font-size: 15px;
     }
     img {
         width: 225px;
@@ -742,7 +772,7 @@ h1 {
       }
   }
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 900px) {
     .grid {
         width: 90%;
     }
@@ -755,25 +785,27 @@ h1 {
 .blog {
         margin-top: 100vh;
         background-color: black;
-        padding-bottom: 100px;
+        padding-bottom: 150px;
         padding-top: 50px;
+        width: 100%;
         .grid {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            width: 70%;
+            width: 90%;
             margin: 0 auto;
           }
           .col {
-            margin: 25px 25px 20px 25px;
             position: relative;
             -webkit-backface-visibility: hidden;
+            margin: 20px;
+            width: 410px;
           }
           
         article {
             margin-top: 40px;
             text-decoration: none;
-            width: 30vw;
+            width: 100%;
             a {
                 display: flex;
                 flex-direction: column;
@@ -815,25 +847,38 @@ h1 {
                 }
             }
         }
-        @media only screen and (max-width: 1160px) {
-            article {
-                width: 65vw;
+        @media only screen and (max-width: 800px) {
+            col {
+
             }
             }
             @media only screen and (max-width: 600px) {
                 article {
-                    width: 90vw;
                 }
                 }
-                @media only screen and (min-width: 1160px) {
+                @media only screen and (min-width: 1400px) {
                     .col:first-of-type {
-                        width: 40vw;
+                        width: 600px;
+                        margin: 0 200px;
                         article {
-                            width:100%
+                            
+                            margin: 10px;
+                        }
+                        a {
+                            width:  100%;
+                        }
+                        img {
+                            width: 100%;
                         }
                     }
+                    .grid {
+                        width: 1000px;
                     }
-      }
+            }
+}
+                    
+
+    
     
 .blogbody {
     display: flex;
@@ -844,7 +889,7 @@ h1 {
     article {
     display: flex;
     flex-direction: column;
-    width: 85%;
+    width: 90%;
     margin: auto;
     padding: 0 15px;
     margin-bottom: 150px;
@@ -924,7 +969,7 @@ h1 {
             }
             @media only screen and (min-width: 800px) {
                 article {
-                    width: 40%;
+                    width: 600px;
                 }
                 }
     }
@@ -962,7 +1007,7 @@ h1 {
         justify-content: center;
         align-items: center;
         width: 90%;
-        background-color: #1f1f24;
+        background-color: #111111;
         padding-top: 30px;
         border-radius: 5px;
         margin-bottom: 75px;
@@ -989,7 +1034,7 @@ h1 {
             border-color: white;
             background-color: black;
             border-radius: 5px;
-            border-width: 3px;
+            border-width: 2px;
             border-style: solid;
             width: 100%;
             height: 30px;
@@ -1004,7 +1049,7 @@ h1 {
             background-color: black;
             border-style: solid;
             border-radius: 5px;
-            border-width: 3px;
+            border-width: 2px;
             width: 100%;
             height: 30px;
             margin-bottom: 10px;
@@ -1017,7 +1062,7 @@ h1 {
             border-color: white;
             background-color: black;
             border-radius: 5px;
-            border-width: 3px;
+            border-width: 2px;
             border-style: solid;
             width: 100%;
         }
@@ -1059,13 +1104,13 @@ h1 {
     }
     @media only screen and (min-width: 500px) {
         .contactinfo {
-            width: 500px;
+            width: 400px;
             height: 275px;
             margin-bottom: 75px;
             margin-top: 0;
         }
         .contactform {
-            width: 500px;
+            width: 400px;
             height: 400px;
         }
     }
@@ -1079,8 +1124,9 @@ h1 {
         margin-right: 100px;
         margin-top: 0;
         width: 400px;
-        margin-bottom: 20px;
+        padding-bottom: 20px;
         margin-top: 0;
+        height: 400px;
     }
     .contactinfo {
         width: 100%;
@@ -1366,7 +1412,7 @@ $duration5: random(200)+100;
     height: 10px;
     width: 5px;
     border-radius: 40px;
-    background-color: #878788;
+    background-color: #87878850;
     animation-name: line1;
     animation-duration: $line1+s;
     animation-iteration-count: infinite;
@@ -1378,7 +1424,7 @@ $duration5: random(200)+100;
     height: 10px;
     width: 5px;
     border-radius: 40px;
-    background-color: #878788;
+    background-color: #87878850;
     animation-name: line1;
     animation-duration: $line2+s;
     animation-iteration-count: infinite;
@@ -1390,9 +1436,26 @@ $duration5: random(200)+100;
     height: 10px;
     width: 5px;
     border-radius: 40px;
-    background-color: #878788;
+    background-color: #87878850;
     animation-name: line1;
     animation-duration: $line3+s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+
+@media only screen and (min-width: 1300px) {
+    .bigline {
+        width: 35vw;
+        height: 5px;
+        background-color: #87878850;
+    }
+    @keyframes line1 {
+        0% {
+            transform: translateX(17.5vw);
+        }
+    
+        100% {
+            transform: translateX(-17.5vw);
+        }
+    }
 }
