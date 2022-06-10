@@ -319,6 +319,9 @@ nav {
   background-color: $neutral1;
   width: 100%;
   border-top: $accent1 solid 1px;
+  h2 {
+     visibility: hidden; 
+  }
 
   div {
     display: flex;
