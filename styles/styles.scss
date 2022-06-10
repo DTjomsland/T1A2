@@ -57,7 +57,7 @@ header {
     padding: 0 5px;
     align-items: center;
     position: fixed;
-    width: 99%;
+    width: 100%;
     top: 0;
     z-index: 100;
 
@@ -94,6 +94,7 @@ header {
 
             img {
                 width: 35px;
+                margin-right: 5px;
             }
         }
 
