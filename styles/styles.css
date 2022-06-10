@@ -230,7 +230,7 @@ nav {
   background-color: #000000;
   width: 100%;
   border-top: #ffffff solid 1px; }
-  .aboutme article {
+  .aboutme div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -238,25 +238,25 @@ nav {
     padding-top: 100px;
     width: 90%; }
     @media only screen and (min-width: 1200px) {
-      .aboutme article {
+      .aboutme div {
         flex-direction: row; } }
-    .aboutme article .aboutimg {
+    .aboutme div .aboutimg {
       width: 350px;
       border-radius: 50%; }
       @media only screen and (min-width: 1200px) {
-        .aboutme article .aboutimg {
+        .aboutme div .aboutimg {
           margin-right: 30px; } }
-    .aboutme article p {
+    .aboutme div p {
       display: block;
       margin-top: 20px;
       font-family: quickLight;
       font-size: 18px;
       color: #ffffff; }
       @media only screen and (min-width: 1200px) {
-        .aboutme article p {
+        .aboutme div p {
           font-size: 18px;
           width: 40%; } }
-      .aboutme article p span {
+      .aboutme div p span {
         color: #ba01aa;
         font-family: quickRegular; }
 
@@ -836,7 +836,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container1;
-  animation-duration: 359S;
+  animation-duration: 465S;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -845,7 +845,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container2;
-  animation-duration: 406s;
+  animation-duration: 579s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -854,7 +854,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container3;
-  animation-duration: 247s;
+  animation-duration: 207s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -863,7 +863,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container4;
-  animation-duration: 640s;
+  animation-duration: 676s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -872,65 +872,65 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container5;
-  animation-duration: 264s;
+  animation-duration: 186s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
 @keyframes container1 {
   0% {
-    transform: translate(-30vw, 10vh) rotate(289deg); }
+    transform: translate(-30vw, 10vh) rotate(174deg); }
   20% {
-    transform: translate(20vw, 40vh) rotate(469deg); }
+    transform: translate(20vw, 40vh) rotate(137deg); }
   45% {
-    transform: translate(-20vw, 20vh) rotate(374deg); }
+    transform: translate(-20vw, 20vh) rotate(334deg); }
   70% {
-    transform: translate(-40vw, 40vh) rotate(248deg); }
+    transform: translate(-40vw, 40vh) rotate(525deg); }
   100% {
-    transform: translate(30vw, 10vh) rotate(296deg); } }
+    transform: translate(30vw, 10vh) rotate(100deg); } }
 @keyframes container2 {
   0% {
-    transform: translate(35vw, 25vh) rotate(296deg); }
+    transform: translate(35vw, 25vh) rotate(100deg); }
   25% {
-    transform: translate(20vw, 10vh) rotate(248deg); }
+    transform: translate(20vw, 10vh) rotate(525deg); }
   50% {
-    transform: translate(10vw, 35vh) rotate(374deg); }
+    transform: translate(10vw, 35vh) rotate(334deg); }
   75% {
-    transform: translate(-10vw, 50vh) rotate(469deg); }
+    transform: translate(-10vw, 50vh) rotate(137deg); }
   100% {
-    transform: translate(20vw, 20vh) rotate(289deg); } }
+    transform: translate(20vw, 20vh) rotate(174deg); } }
 @keyframes container3 {
   0% {
-    transform: translate(40vw, 70vh) rotate(374deg); }
+    transform: translate(40vw, 70vh) rotate(334deg); }
   30% {
-    transform: translate(50vw, 60vh) rotate(374deg); }
+    transform: translate(50vw, 60vh) rotate(334deg); }
   55% {
-    transform: translate(20vw, 80vh) rotate(248deg); }
+    transform: translate(20vw, 80vh) rotate(525deg); }
   80% {
-    transform: translate(30vw, 65vh) rotate(469deg); }
+    transform: translate(30vw, 65vh) rotate(137deg); }
   100% {
-    transform: translate(10vw, 50vh) rotate(296deg); } }
+    transform: translate(10vw, 50vh) rotate(100deg); } }
 @keyframes container4 {
   0% {
-    transform: translate(-40vw, 90vh) rotate(469deg); }
+    transform: translate(-40vw, 90vh) rotate(137deg); }
   25% {
-    transform: translate(-30vw, 60vh) rotate(248deg); }
+    transform: translate(-30vw, 60vh) rotate(525deg); }
   50% {
-    transform: translate(-20vw, 40vh) rotate(248deg); }
+    transform: translate(-20vw, 40vh) rotate(525deg); }
   75% {
-    transform: translate(-25vw, 30vh) rotate(289deg); }
+    transform: translate(-25vw, 30vh) rotate(174deg); }
   100% {
-    transform: translate(-10vw, 90vh) rotate(374deg); } }
+    transform: translate(-10vw, 90vh) rotate(334deg); } }
 @keyframes container5 {
   0% {
-    transform: translate(-20vw, 40vh) rotate(248deg); }
+    transform: translate(-20vw, 40vh) rotate(525deg); }
   25% {
-    transform: translate(-40vw, 50vh) rotate(289deg); }
+    transform: translate(-40vw, 50vh) rotate(174deg); }
   50% {
-    transform: translate(-10vw, 80vh) rotate(469deg); }
+    transform: translate(-10vw, 80vh) rotate(137deg); }
   75% {
-    transform: translate(-30vw, 60vh) rotate(374deg); }
+    transform: translate(-30vw, 60vh) rotate(334deg); }
   100% {
-    transform: translate(-10vw, 10vh) rotate(248deg); } }
+    transform: translate(-10vw, 10vh) rotate(525deg); } }
 @keyframes line1 {
   0% {
     transform: translateX(22.5vw); }
@@ -978,7 +978,7 @@ h2 {
   border-radius: 40px;
   background-color: #87878850;
   animation-name: line1;
-  animation-duration: 16s;
+  animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -989,7 +989,7 @@ h2 {
   border-radius: 40px;
   background-color: #87878850;
   animation-name: line1;
-  animation-duration: 18s;
+  animation-duration: 14s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse; }
 
@@ -1000,7 +1000,7 @@ h2 {
   border-radius: 40px;
   background-color: #87878850;
   animation-name: line1;
-  animation-duration: 12s;
+  animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
