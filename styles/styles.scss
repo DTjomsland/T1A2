@@ -923,16 +923,17 @@ h2 {
       padding-bottom: 0px;
   }
 
-  h3 {
+  h2 {
     font-family: quickLight;
     color: $accent1;
     font-size: 35px;
     color: $accent1;
-    margin-bottom: 30px;
     text-align: center;
+    padding: 0;
+    margin: 0 0 25px 0;
   }
 
-  aside {
+  section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -998,6 +999,7 @@ h2 {
           width: 400px;
           height: 400px;
       }
+    
     #fname {
       border-color: $accent1;
       background-color: $neutral1;
