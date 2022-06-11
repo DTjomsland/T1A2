@@ -310,7 +310,8 @@ nav {
       margin-top: 25px;
       font-size: 16px;
       color: #ffffff;
-      width: 100%; }
+      width: 100%;
+      -webkit-backface-visibility: hidden; }
   .experience .button {
     display: flex;
     font-family: quickLight;
@@ -371,7 +372,8 @@ nav {
       font-family: quickLight;
       font-size: 18px;
       color: #ba01aa;
-      padding: 0 0 10px 0; }
+      padding: 0 0 10px 0;
+      -webkit-backface-visibility: hidden; }
     .funfacts .spotify .smallcard,
     .funfacts .books .smallcard {
       display: flex;
@@ -702,7 +704,7 @@ h2 {
     text-align: center;
     padding: 0;
     margin: 0 0 25px 0; }
-  .contact section {
+  .contact article {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -710,7 +712,7 @@ h2 {
     width: 100%;
     margin-top: 200px; }
     @media only screen and (min-width: 1300px) {
-      .contact section {
+      .contact article {
         margin-right: 100px;
         margin-top: 0;
         width: 400px;
@@ -839,7 +841,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container1;
-  animation-duration: 326S;
+  animation-duration: 481S;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -848,7 +850,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container2;
-  animation-duration: 472s;
+  animation-duration: 526s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -857,7 +859,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container3;
-  animation-duration: 296s;
+  animation-duration: 319s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -866,7 +868,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container4;
-  animation-duration: 654s;
+  animation-duration: 691s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -875,65 +877,65 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container5;
-  animation-duration: 285s;
+  animation-duration: 115s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
 @keyframes container1 {
   0% {
-    transform: translate(-30vw, 10vh) rotate(334deg); }
+    transform: translate(-30vw, 10vh) rotate(158deg); }
   20% {
-    transform: translate(20vw, 40vh) rotate(226deg); }
+    transform: translate(20vw, 40vh) rotate(157deg); }
   45% {
-    transform: translate(-20vw, 20vh) rotate(209deg); }
+    transform: translate(-20vw, 20vh) rotate(624deg); }
   70% {
-    transform: translate(-40vw, 40vh) rotate(203deg); }
+    transform: translate(-40vw, 40vh) rotate(334deg); }
   100% {
-    transform: translate(30vw, 10vh) rotate(156deg); } }
+    transform: translate(30vw, 10vh) rotate(253deg); } }
 @keyframes container2 {
   0% {
-    transform: translate(35vw, 25vh) rotate(156deg); }
+    transform: translate(35vw, 25vh) rotate(253deg); }
   25% {
-    transform: translate(20vw, 10vh) rotate(203deg); }
+    transform: translate(20vw, 10vh) rotate(334deg); }
   50% {
-    transform: translate(10vw, 35vh) rotate(209deg); }
+    transform: translate(10vw, 35vh) rotate(624deg); }
   75% {
-    transform: translate(-10vw, 50vh) rotate(226deg); }
+    transform: translate(-10vw, 50vh) rotate(157deg); }
   100% {
-    transform: translate(20vw, 20vh) rotate(334deg); } }
+    transform: translate(20vw, 20vh) rotate(158deg); } }
 @keyframes container3 {
   0% {
-    transform: translate(40vw, 70vh) rotate(209deg); }
+    transform: translate(40vw, 70vh) rotate(624deg); }
   30% {
-    transform: translate(50vw, 60vh) rotate(209deg); }
+    transform: translate(50vw, 60vh) rotate(624deg); }
   55% {
-    transform: translate(20vw, 80vh) rotate(203deg); }
+    transform: translate(20vw, 80vh) rotate(334deg); }
   80% {
-    transform: translate(30vw, 65vh) rotate(226deg); }
+    transform: translate(30vw, 65vh) rotate(157deg); }
   100% {
-    transform: translate(10vw, 50vh) rotate(156deg); } }
+    transform: translate(10vw, 50vh) rotate(253deg); } }
 @keyframes container4 {
   0% {
-    transform: translate(-40vw, 90vh) rotate(226deg); }
+    transform: translate(-40vw, 90vh) rotate(157deg); }
   25% {
-    transform: translate(-30vw, 60vh) rotate(203deg); }
+    transform: translate(-30vw, 60vh) rotate(334deg); }
   50% {
-    transform: translate(-20vw, 40vh) rotate(203deg); }
+    transform: translate(-20vw, 40vh) rotate(334deg); }
   75% {
-    transform: translate(-25vw, 30vh) rotate(334deg); }
+    transform: translate(-25vw, 30vh) rotate(158deg); }
   100% {
-    transform: translate(-10vw, 90vh) rotate(209deg); } }
+    transform: translate(-10vw, 90vh) rotate(624deg); } }
 @keyframes container5 {
   0% {
-    transform: translate(-20vw, 40vh) rotate(203deg); }
+    transform: translate(-20vw, 40vh) rotate(334deg); }
   25% {
-    transform: translate(-40vw, 50vh) rotate(334deg); }
+    transform: translate(-40vw, 50vh) rotate(158deg); }
   50% {
-    transform: translate(-10vw, 80vh) rotate(226deg); }
+    transform: translate(-10vw, 80vh) rotate(157deg); }
   75% {
-    transform: translate(-30vw, 60vh) rotate(209deg); }
+    transform: translate(-30vw, 60vh) rotate(624deg); }
   100% {
-    transform: translate(-10vw, 10vh) rotate(203deg); } }
+    transform: translate(-10vw, 10vh) rotate(334deg); } }
 @keyframes line1 {
   0% {
     transform: translateX(22.5vw); }
@@ -981,7 +983,7 @@ h2 {
   border-radius: 40px;
   background-color: #87878850;
   animation-name: line1;
-  animation-duration: 11s;
+  animation-duration: 17s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -992,7 +994,7 @@ h2 {
   border-radius: 40px;
   background-color: #87878850;
   animation-name: line1;
-  animation-duration: 12s;
+  animation-duration: 17s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse; }
 
@@ -1003,7 +1005,7 @@ h2 {
   border-radius: 40px;
   background-color: #87878850;
   animation-name: line1;
-  animation-duration: 17s;
+  animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
