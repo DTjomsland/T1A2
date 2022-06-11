@@ -20,7 +20,7 @@ $accent2: #ba01aa;
     margin: 0;
     padding: 0 0 0 0;
 }
-
+// Add smooth scroll to arrows
 html {
     scroll-behavior: smooth;
 }
@@ -273,7 +273,7 @@ nav {
         }
     }
 
-    //   Styling for bouncing arrow
+    //   Styling for bouncing arrow. Box flipped 45* with two borders pink.
     .arrow {
         box-sizing: border-box;
         height: 50px;
@@ -296,12 +296,12 @@ nav {
             margin-top: 10vh;
         }
     }
-
+// Grows on hover
     .arrow:hover {
         height: 55px;
         width: 55px;
     }
-
+// Animation for arrow bounce
     @keyframes arrow {
         0% {
             transform: rotate(45deg) translate(0, 0);
@@ -1080,6 +1080,14 @@ h2 {
             color: $accent1;
             font-size: 14px;
         }
+
+        input, select, textarea{
+            color: $accent1;
+        }
+        
+        // textarea:focus, input:focus {
+        //     color: $accent1;
+        // }
 
         .submit {
             display: flex;
