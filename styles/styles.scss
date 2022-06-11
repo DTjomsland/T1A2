@@ -491,7 +491,7 @@ nav {
           width: 90%;
         }
     }
-    h4 {
+    h3 {
       font-family: quickLight;
       font-size: 18px;
       color: $accent2;
@@ -828,12 +828,12 @@ h2 {
       margin-bottom: 15px;
     }
 
-    h3 {
+    h2 {
       font-size: 18px;
-      margin-right: 0;
       color: $accent1;
       font-family: quickLight;
-      margin-bottom: 10px;
+      margin: 0 0 10px 0;
+      padding: 0;
     }
 
     .date {

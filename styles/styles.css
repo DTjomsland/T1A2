@@ -366,8 +366,8 @@ nav {
       .funfacts .spotify .line2,
       .funfacts .books .line2 {
         width: 90%; } }
-    .funfacts .spotify h4,
-    .funfacts .books h4 {
+    .funfacts .spotify h3,
+    .funfacts .books h3 {
       font-family: quickLight;
       font-size: 18px;
       color: #ba01aa;
@@ -620,12 +620,12 @@ h2 {
       color: #ba01aa;
       font-weight: lighter;
       margin-bottom: 15px; }
-    .blogbody article h3 {
+    .blogbody article h2 {
       font-size: 18px;
-      margin-right: 0;
       color: #ffffff;
       font-family: quickLight;
-      margin-bottom: 10px; }
+      margin: 0 0 10px 0;
+      padding: 0; }
     .blogbody article .date {
       color: #ffffff;
       font-family: quickLight;
@@ -839,7 +839,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container1;
-  animation-duration: 489S;
+  animation-duration: 326S;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -848,7 +848,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container2;
-  animation-duration: 528s;
+  animation-duration: 472s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -857,7 +857,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container3;
-  animation-duration: 248s;
+  animation-duration: 296s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -866,7 +866,7 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container4;
-  animation-duration: 627s;
+  animation-duration: 654s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -875,65 +875,65 @@ h2 {
   justify-content: center;
   align-items: center;
   animation-name: container5;
-  animation-duration: 225s;
+  animation-duration: 285s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
 @keyframes container1 {
   0% {
-    transform: translate(-30vw, 10vh) rotate(193deg); }
+    transform: translate(-30vw, 10vh) rotate(334deg); }
   20% {
-    transform: translate(20vw, 40vh) rotate(59deg); }
+    transform: translate(20vw, 40vh) rotate(226deg); }
   45% {
-    transform: translate(-20vw, 20vh) rotate(290deg); }
+    transform: translate(-20vw, 20vh) rotate(209deg); }
   70% {
-    transform: translate(-40vw, 40vh) rotate(79deg); }
+    transform: translate(-40vw, 40vh) rotate(203deg); }
   100% {
-    transform: translate(30vw, 10vh) rotate(14deg); } }
+    transform: translate(30vw, 10vh) rotate(156deg); } }
 @keyframes container2 {
   0% {
-    transform: translate(35vw, 25vh) rotate(14deg); }
+    transform: translate(35vw, 25vh) rotate(156deg); }
   25% {
-    transform: translate(20vw, 10vh) rotate(79deg); }
+    transform: translate(20vw, 10vh) rotate(203deg); }
   50% {
-    transform: translate(10vw, 35vh) rotate(290deg); }
+    transform: translate(10vw, 35vh) rotate(209deg); }
   75% {
-    transform: translate(-10vw, 50vh) rotate(59deg); }
+    transform: translate(-10vw, 50vh) rotate(226deg); }
   100% {
-    transform: translate(20vw, 20vh) rotate(193deg); } }
+    transform: translate(20vw, 20vh) rotate(334deg); } }
 @keyframes container3 {
   0% {
-    transform: translate(40vw, 70vh) rotate(290deg); }
+    transform: translate(40vw, 70vh) rotate(209deg); }
   30% {
-    transform: translate(50vw, 60vh) rotate(290deg); }
+    transform: translate(50vw, 60vh) rotate(209deg); }
   55% {
-    transform: translate(20vw, 80vh) rotate(79deg); }
+    transform: translate(20vw, 80vh) rotate(203deg); }
   80% {
-    transform: translate(30vw, 65vh) rotate(59deg); }
+    transform: translate(30vw, 65vh) rotate(226deg); }
   100% {
-    transform: translate(10vw, 50vh) rotate(14deg); } }
+    transform: translate(10vw, 50vh) rotate(156deg); } }
 @keyframes container4 {
   0% {
-    transform: translate(-40vw, 90vh) rotate(59deg); }
+    transform: translate(-40vw, 90vh) rotate(226deg); }
   25% {
-    transform: translate(-30vw, 60vh) rotate(79deg); }
+    transform: translate(-30vw, 60vh) rotate(203deg); }
   50% {
-    transform: translate(-20vw, 40vh) rotate(79deg); }
+    transform: translate(-20vw, 40vh) rotate(203deg); }
   75% {
-    transform: translate(-25vw, 30vh) rotate(193deg); }
+    transform: translate(-25vw, 30vh) rotate(334deg); }
   100% {
-    transform: translate(-10vw, 90vh) rotate(290deg); } }
+    transform: translate(-10vw, 90vh) rotate(209deg); } }
 @keyframes container5 {
   0% {
-    transform: translate(-20vw, 40vh) rotate(79deg); }
+    transform: translate(-20vw, 40vh) rotate(203deg); }
   25% {
-    transform: translate(-40vw, 50vh) rotate(193deg); }
+    transform: translate(-40vw, 50vh) rotate(334deg); }
   50% {
-    transform: translate(-10vw, 80vh) rotate(59deg); }
+    transform: translate(-10vw, 80vh) rotate(226deg); }
   75% {
-    transform: translate(-30vw, 60vh) rotate(290deg); }
+    transform: translate(-30vw, 60vh) rotate(209deg); }
   100% {
-    transform: translate(-10vw, 10vh) rotate(79deg); } }
+    transform: translate(-10vw, 10vh) rotate(203deg); } }
 @keyframes line1 {
   0% {
     transform: translateX(22.5vw); }
@@ -981,7 +981,7 @@ h2 {
   border-radius: 40px;
   background-color: #87878850;
   animation-name: line1;
-  animation-duration: 19s;
+  animation-duration: 11s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
@@ -1003,7 +1003,7 @@ h2 {
   border-radius: 40px;
   background-color: #87878850;
   animation-name: line1;
-  animation-duration: 12s;
+  animation-duration: 17s;
   animation-iteration-count: infinite;
   animation-direction: alternate; }
 
