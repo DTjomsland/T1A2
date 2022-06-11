@@ -20,6 +20,7 @@ $accent2: #ba01aa;
     margin: 0;
     padding: 0 0 0 0;
 }
+
 // Add smooth scroll to arrows
 html {
     scroll-behavior: smooth;
@@ -296,12 +297,14 @@ nav {
             margin-top: 10vh;
         }
     }
-// Grows on hover
+
+    // Grows on hover
     .arrow:hover {
         height: 55px;
         width: 55px;
     }
-// Animation for arrow bounce
+
+    // Animation for arrow bounce
     @keyframes arrow {
         0% {
             transform: rotate(45deg) translate(0, 0);
@@ -1081,13 +1084,11 @@ h2 {
             font-size: 14px;
         }
 
-        input, select, textarea{
+        input,
+        select,
+        textarea {
             color: $accent1;
         }
-        
-        // textarea:focus, input:focus {
-        //     color: $accent1;
-        // }
 
         .submit {
             display: flex;
